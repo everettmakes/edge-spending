@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+data/
+mlx_data/
+adapters/
+fused/
+gguf/
+*.gguf
+mlflow.db
+mlruns/
+predictions.jsonl
+.DS_Store
+*.zip

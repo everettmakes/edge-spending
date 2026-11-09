@@ -1,0 +1,6 @@
+mlx-lm
+mlflow
+llama-cpp-python
+psutil
+matplotlib
+tabulate
