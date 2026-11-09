@@ -1,0 +1,600 @@
+{"line": "CARD PAYMENT TO AMZN MKTP UK*2H3 ON 24/02 31.39", "label": {"merchant": "Amazon", "amount": 31.39, "category": "shopping"}}
+{"line": "CONTACTLESS BOOTS 1137 BRISTOL \u00a353.85", "label": {"merchant": "Boots", "amount": 53.85, "category": "shopping"}}
+{"line": "15/10 NETFLIX INTERNATIONAL LONDON -12.83", "label": {"merchant": "Netflix", "amount": 12.83, "category": "subscriptions"}}
+{"line": "CARD PAYMENT TO STEAMGAMES.COM 4259 ON 09/03 52.55", "label": {"merchant": "Steam", "amount": 52.55, "category": "entertainment"}}
+{"line": "ODEON BRISTOL BATH 20/05 \u00a315.41", "label": {"merchant": "Odeon", "amount": 15.41, "category": "entertainment"}}
+{"line": "CONTACTLESS BOOTS 1137 MANCHESTER \u00a329.19", "label": {"merchant": "Boots", "amount": 29.19, "category": "shopping"}}
+{"line": "CASH WITHDRAWAL LNK 08/05 \u00a378.71", "label": {"merchant": "ATM", "amount": 78.71, "category": "cash"}}
+{"line": "ATM WDL NATWEST 31319 54.23 GBP", "label": {"merchant": "ATM", "amount": 54.23, "category": "cash"}}
+{"line": "21/03 GREGGS PLC MANCHESTER -4.49", "label": {"merchant": "Greggs", "amount": 4.49, "category": "eating_out"}}
+{"line": "BOOTS 1137 40021 16.95 GBP", "label": {"merchant": "Boots", "amount": 16.95, "category": "shopping"}}
+{"line": "TICKETMASTER UK 51245 24.17 GBP", "label": {"merchant": "Ticketmaster", "amount": 24.17, "category": "entertainment"}}
+{"line": "09/03 UBER* TRIP HELP.UBER.COM LONDON -28.28", "label": {"merchant": "Uber", "amount": 28.28, "category": "transport"}}
+{"line": "DD BOOTS UK LTD REF 38746 \u00a335.00", "label": {"merchant": "Boots", "amount": 35.0, "category": "shopping"}}
+{"line": "TFL TRAVEL CH LONDON 21/03 \u00a38.62", "label": {"merchant": "TfL", "amount": 8.62, "category": "transport"}}
+{"line": "DD THAMES WATER UTIL REF 11504 \u00a349.82", "label": {"merchant": "Thames Water", "amount": 49.82, "category": "bills"}}
+{"line": "DD ASOS.COM REF 48469 \u00a3111.46", "label": {"merchant": "ASOS", "amount": 111.46, "category": "shopping"}}
+{"line": "25/03 THAMES WATER UTIL MANCHESTER -27.91", "label": {"merchant": "Thames Water", "amount": 27.91, "category": "bills"}}
+{"line": "12/03 LIDL GB LONDON -61.45", "label": {"merchant": "Lidl", "amount": 61.45, "category": "groceries"}}
+{"line": "DD ODEON BRISTOL REF 57576 \u00a328.29", "label": {"merchant": "Odeon", "amount": 28.29, "category": "entertainment"}}
+{"line": "CARD PAYMENT TO TICKETMASTER UK ON 24/08 124.88", "label": {"merchant": "Ticketmaster", "amount": 124.88, "category": "entertainment"}}
+{"line": "06/05 ODEON BRISTOL MANCHESTER -19.72", "label": {"merchant": "Odeon", "amount": 19.72, "category": "entertainment"}}
+{"line": "DD CASH BARCLAYS ATM REF 50857 \u00a3125.25", "label": {"merchant": "ATM", "amount": 125.25, "category": "cash"}}
+{"line": "CONTACTLESS BG SERVICES BRISTOL \u00a3179.32", "label": {"merchant": "British Gas", "amount": 179.32, "category": "bills"}}
+{"line": "DD DELIVEROO.CO.UK REF 92719 \u00a312.69", "label": {"merchant": "Deliveroo", "amount": 12.69, "category": "eating_out"}}
+{"line": "SAINSBURYS S/MKTS 97684 27.50 GBP", "label": {"merchant": "Sainsbury's", "amount": 27.5, "category": "groceries"}}
+{"line": "DD EE & T-MOBILE REF 63354 \u00a320.71", "label": {"merchant": "EE", "amount": 20.71, "category": "bills"}}
+{"line": "UBER* TRIP HELP.UBER.COM 17100 9.21 GBP", "label": {"merchant": "Uber", "amount": 9.21, "category": "transport"}}
+{"line": "ASOS.COM 11/02 \u00a3102.18", "label": {"merchant": "ASOS", "amount": 102.18, "category": "shopping"}}
+{"line": "CONTACTLESS UBER *TRIP BATH \u00a312.47", "label": {"merchant": "Uber", "amount": 12.47, "category": "transport"}}
+{"line": "VIRGIN MEDIA 18/01 \u00a377.52", "label": {"merchant": "Virgin Media", "amount": 77.52, "category": "bills"}}
+{"line": "CONTACTLESS ODEON BRISTOL LONDON \u00a326.67", "label": {"merchant": "Odeon", "amount": 26.67, "category": "entertainment"}}
+{"line": "TRAINLINE 82845 58.02 GBP", "label": {"merchant": "Trainline", "amount": 58.02, "category": "transport"}}
+{"line": "ASOS.COM LTD 81066 111.14 GBP", "label": {"merchant": "ASOS", "amount": 111.14, "category": "shopping"}}
+{"line": "DD SAINSBURY'S LOCAL REF 30635 \u00a383.03", "label": {"merchant": "Sainsbury's", "amount": 83.03, "category": "groceries"}}
+{"line": "CARD PAYMENT TO SAINSBURYS S/MKTS ON 03/11 105.80", "label": {"merchant": "Sainsbury's", "amount": 105.8, "category": "groceries"}}
+{"line": "CARD PAYMENT TO BRITISH GAS ON 03/07 56.78", "label": {"merchant": "British Gas", "amount": 56.78, "category": "bills"}}
+{"line": "AMZNPRIME*AB12C 41285 55.87 GBP", "label": {"merchant": "Amazon Prime", "amount": 55.87, "category": "subscriptions"}}
+{"line": "NANDO'S CHICKENLAND 11220 23.25 GBP", "label": {"merchant": "Nando's", "amount": 23.25, "category": "eating_out"}}
+{"line": "VIRGIN MEDIA MANCHESTER 07/09 \u00a365.38", "label": {"merchant": "Virgin Media", "amount": 65.38, "category": "bills"}}
+{"line": "CARD PAYMENT TO TFL.GOV.UK/CP ON 06/08 14.13", "label": {"merchant": "TfL", "amount": 14.13, "category": "transport"}}
+{"line": "27/09 ARGOS LTD -66.08", "label": {"merchant": "Argos", "amount": 66.08, "category": "shopping"}}
+{"line": "ASOS.COM LTD 30374 26.29 GBP", "label": {"merchant": "ASOS", "amount": 26.29, "category": "shopping"}}
+{"line": "NANDOS 0412 76244 19.14 GBP", "label": {"merchant": "Nando's", "amount": 19.14, "category": "eating_out"}}
+{"line": "EE LIMITED 14/05 \u00a322.56", "label": {"merchant": "EE", "amount": 22.56, "category": "bills"}}
+{"line": "TESCO EXPRESS 66057 42.03 GBP", "label": {"merchant": "Tesco", "amount": 42.03, "category": "groceries"}}
+{"line": "02/06 SPOTIFY UK MANCHESTER -6.12", "label": {"merchant": "Spotify", "amount": 6.12, "category": "subscriptions"}}
+{"line": "SPOTIFY P1A2B3 99399 7.78 GBP", "label": {"merchant": "Spotify", "amount": 7.78, "category": "subscriptions"}}
+{"line": "DD FIRSTGROUP BUS REF 41029 \u00a34.67", "label": {"merchant": "First Bus", "amount": 4.67, "category": "transport"}}
+{"line": "CARD PAYMENT TO ATM WDL NATWEST ON 06/12 40.88", "label": {"merchant": "ATM", "amount": 40.88, "category": "cash"}}
+{"line": "06/12 STEAM PURCHASE BATH -56.06", "label": {"merchant": "Steam", "amount": 56.06, "category": "entertainment"}}
+{"line": "CARD PAYMENT TO BRITISH GAS ON 12/05 162.10", "label": {"merchant": "British Gas", "amount": 162.1, "category": "bills"}}
+{"line": "FIRSTGROUP BUS 56025 2.09 GBP", "label": {"merchant": "First Bus", "amount": 2.09, "category": "transport"}}
+{"line": "DD AMAZON.CO.UK*AB1CD REF 33405 \u00a3129.31", "label": {"merchant": "Amazon", "amount": 129.31, "category": "shopping"}}
+{"line": "AMAZON PRIME*UK BATH 24/06 \u00a391.63", "label": {"merchant": "Amazon Prime", "amount": 91.63, "category": "subscriptions"}}
+{"line": "DD DISNEY PLUS REF 67154 \u00a310.91", "label": {"merchant": "Disney+", "amount": 10.91, "category": "subscriptions"}}
+{"line": "14/02 TESCO EXPRESS BATH -63.83", "label": {"merchant": "Tesco", "amount": 63.83, "category": "groceries"}}
+{"line": "DELIVEROO MANCHESTER 10/11 \u00a332.56", "label": {"merchant": "Deliveroo", "amount": 32.56, "category": "eating_out"}}
+{"line": "CARD PAYMENT TO DELIVEROO.CO.UK ON 22/07 25.28", "label": {"merchant": "Deliveroo", "amount": 25.28, "category": "eating_out"}}
+{"line": "BOOTS UK LTD 49829 54.46 GBP", "label": {"merchant": "Boots", "amount": 54.46, "category": "shopping"}}
+{"line": "DD PRET A MANGER (EUROPE) REF 98555 \u00a34.89", "label": {"merchant": "Pret", "amount": 4.89, "category": "eating_out"}}
+{"line": "03/05 UBER *TRIP -23.38", "label": {"merchant": "Uber", "amount": 23.38, "category": "transport"}}
+{"line": "CARD PAYMENT TO ASOS.COM ON 26/04 99.35", "label": {"merchant": "ASOS", "amount": 99.35, "category": "shopping"}}
+{"line": "DD TESCO STORES 3297 REF 85454 \u00a38.41", "label": {"merchant": "Tesco", "amount": 8.41, "category": "groceries"}}
+{"line": "CONTACTLESS UBER *TRIP LONDON \u00a330.42", "label": {"merchant": "Uber", "amount": 30.42, "category": "transport"}}
+{"line": "CONTACTLESS ODEON CINEMAS LONDON \u00a326.93", "label": {"merchant": "Odeon", "amount": 26.93, "category": "entertainment"}}
+{"line": "VIRGIN MEDIA PYMTS LONDON 26/08 \u00a328.26", "label": {"merchant": "Virgin Media", "amount": 28.26, "category": "bills"}}
+{"line": "CONTACTLESS NETFLIX INTERNATIONAL MANCHESTER \u00a317.84", "label": {"merchant": "Netflix", "amount": 17.84, "category": "subscriptions"}}
+{"line": "16/11 VIRGIN MEDIA PYMTS MANCHESTER -41.85", "label": {"merchant": "Virgin Media", "amount": 41.85, "category": "bills"}}
+{"line": "CARD PAYMENT TO NANDO'S CHICKENLAND ON 11/09 24.84", "label": {"merchant": "Nando's", "amount": 24.84, "category": "eating_out"}}
+{"line": "CARD PAYMENT TO TFL TRAVEL CH ON 14/07 3.96", "label": {"merchant": "TfL", "amount": 3.96, "category": "transport"}}
+{"line": "CONTACTLESS SPOTIFY P1A2B3 MANCHESTER \u00a311.59", "label": {"merchant": "Spotify", "amount": 11.59, "category": "subscriptions"}}
+{"line": "BG SERVICES 81582 106.78 GBP", "label": {"merchant": "British Gas", "amount": 106.78, "category": "bills"}}
+{"line": "CARD PAYMENT TO STEAMGAMES.COM 4259 ON 16/01 37.39", "label": {"merchant": "Steam", "amount": 37.39, "category": "entertainment"}}
+{"line": "05/10 DELIVEROO.CO.UK CARDIFF -34.07", "label": {"merchant": "Deliveroo", "amount": 34.07, "category": "eating_out"}}
+{"line": "21/07 TESCO STORES 3297 BRISTOL -109.11", "label": {"merchant": "Tesco", "amount": 109.11, "category": "groceries"}}
+{"line": "CONTACTLESS ATM WDL NATWEST LONDON \u00a397.72", "label": {"merchant": "ATM", "amount": 97.72, "category": "cash"}}
+{"line": "CONTACTLESS ODEON BRISTOL BRISTOL \u00a327.35", "label": {"merchant": "Odeon", "amount": 27.35, "category": "entertainment"}}
+{"line": "02/01 SAINSBURYS S/MKTS -109.99", "label": {"merchant": "Sainsbury's", "amount": 109.99, "category": "groceries"}}
+{"line": "CARD PAYMENT TO UBER *TRIP ON 22/02 34.53", "label": {"merchant": "Uber", "amount": 34.53, "category": "transport"}}
+{"line": "UBER *TRIP 25012 21.81 GBP", "label": {"merchant": "Uber", "amount": 21.81, "category": "transport"}}
+{"line": "ODEON CINEMAS BATH 19/11 \u00a326.02", "label": {"merchant": "Odeon", "amount": 26.02, "category": "entertainment"}}
+{"line": "DD BRITISH GAS REF 99687 \u00a3171.81", "label": {"merchant": "British Gas", "amount": 171.81, "category": "bills"}}
+{"line": "DD DISNEY PLUS REF 96706 \u00a39.83", "label": {"merchant": "Disney+", "amount": 9.83, "category": "subscriptions"}}
+{"line": "GREGGS 1823 CARDIFF 04/07 \u00a32.48", "label": {"merchant": "Greggs", "amount": 2.48, "category": "eating_out"}}
+{"line": "CARD PAYMENT TO AMAZON.CO.UK*AB1CD ON 24/09 223.33", "label": {"merchant": "Amazon", "amount": 223.33, "category": "shopping"}}
+{"line": "CONTACTLESS NANDO'S CHICKENLAND CARDIFF \u00a331.17", "label": {"merchant": "Nando's", "amount": 31.17, "category": "eating_out"}}
+{"line": "NANDO'S CHICKENLAND CARDIFF 08/08 \u00a320.60", "label": {"merchant": "Nando's", "amount": 20.6, "category": "eating_out"}}
+{"line": "CONTACTLESS DISNEYPLUS LONDON \u00a39.01", "label": {"merchant": "Disney+", "amount": 9.01, "category": "subscriptions"}}
+{"line": "DD STEAMGAMES.COM 4259 REF 35042 \u00a317.73", "label": {"merchant": "Steam", "amount": 17.73, "category": "entertainment"}}
+{"line": "DD ALDI 71 BRISTOL REF 74332 \u00a323.10", "label": {"merchant": "Aldi", "amount": 23.1, "category": "groceries"}}
+{"line": "CARD PAYMENT TO VIRGIN MEDIA PYMTS ON 08/05 76.54", "label": {"merchant": "Virgin Media", "amount": 76.54, "category": "bills"}}
+{"line": "AMAZON PRIME*UK 56112 38.21 GBP", "label": {"merchant": "Amazon Prime", "amount": 38.21, "category": "subscriptions"}}
+{"line": "CARD PAYMENT TO ARGOS LTD ON 07/06 95.12", "label": {"merchant": "Argos", "amount": 95.12, "category": "shopping"}}
+{"line": "CARD PAYMENT TO BOOTS 1137 ON 24/08 33.54", "label": {"merchant": "Boots", "amount": 33.54, "category": "shopping"}}
+{"line": "DD BOOTS UK LTD REF 48829 \u00a336.61", "label": {"merchant": "Boots", "amount": 36.61, "category": "shopping"}}
+{"line": "02/01 FIRST BUS BRISTOL BATH -3.44", "label": {"merchant": "First Bus", "amount": 3.44, "category": "transport"}}
+{"line": "CONTACTLESS PRET A MANGER BRISTOL \u00a39.28", "label": {"merchant": "Pret", "amount": 9.28, "category": "eating_out"}}
+{"line": "EE & T-MOBILE CARDIFF 04/02 \u00a332.02", "label": {"merchant": "EE", "amount": 32.02, "category": "bills"}}
+{"line": "EE LIMITED LONDON 26/10 \u00a313.70", "label": {"merchant": "EE", "amount": 13.7, "category": "bills"}}
+{"line": "CONTACTLESS ALDI 71 BRISTOL MANCHESTER \u00a379.54", "label": {"merchant": "Aldi", "amount": 79.54, "category": "groceries"}}
+{"line": "PRET A MANGER 37235 10.74 GBP", "label": {"merchant": "Pret", "amount": 10.74, "category": "eating_out"}}
+{"line": "CARD PAYMENT TO AMZN MKTP UK*2H3 ON 18/02 55.91", "label": {"merchant": "Amazon", "amount": 55.91, "category": "shopping"}}
+{"line": "CONTACTLESS TESCO.COM BRISTOL \u00a350.80", "label": {"merchant": "Tesco", "amount": 50.8, "category": "groceries"}}
+{"line": "CARD PAYMENT TO ARGOS RETAIL ON 19/11 173.04", "label": {"merchant": "Argos", "amount": 173.04, "category": "shopping"}}
+{"line": "CARD PAYMENT TO THAMES WATER UTIL ON 03/01 25.74", "label": {"merchant": "Thames Water", "amount": 25.74, "category": "bills"}}
+{"line": "DD STEAMGAMES.COM 4259 REF 49857 \u00a320.53", "label": {"merchant": "Steam", "amount": 20.53, "category": "entertainment"}}
+{"line": "DD ARGOS RETAIL REF 15224 \u00a385.28", "label": {"merchant": "Argos", "amount": 85.28, "category": "shopping"}}
+{"line": "THAMES WATER LONDON 22/10 \u00a356.73", "label": {"merchant": "Thames Water", "amount": 56.73, "category": "bills"}}
+{"line": "TESCO STORES 3297 95394 119.95 GBP", "label": {"merchant": "Tesco", "amount": 119.95, "category": "groceries"}}
+{"line": "DD VIRGIN MEDIA PYMTS REF 21959 \u00a384.54", "label": {"merchant": "Virgin Media", "amount": 84.54, "category": "bills"}}
+{"line": "11/07 EE LIMITED LONDON -27.40", "label": {"merchant": "EE", "amount": 27.4, "category": "bills"}}
+{"line": "DD PRET A MANGER REF 43082 \u00a38.96", "label": {"merchant": "Pret", "amount": 8.96, "category": "eating_out"}}
+{"line": "DD DELIVEROO.CO.UK REF 70552 \u00a315.83", "label": {"merchant": "Deliveroo", "amount": 15.83, "category": "eating_out"}}
+{"line": "DD THAMES WATER UTIL REF 36680 \u00a322.71", "label": {"merchant": "Thames Water", "amount": 22.71, "category": "bills"}}
+{"line": "CONTACTLESS NANDO'S CHICKENLAND BRISTOL \u00a328.77", "label": {"merchant": "Nando's", "amount": 28.77, "category": "eating_out"}}
+{"line": "DD STEAM PURCHASE REF 39451 \u00a316.64", "label": {"merchant": "Steam", "amount": 16.64, "category": "entertainment"}}
+{"line": "TICKETMASTER UK CARDIFF 23/05 \u00a3138.68", "label": {"merchant": "Ticketmaster", "amount": 138.68, "category": "entertainment"}}
+{"line": "CONTACTLESS ARGOS LTD CARDIFF \u00a360.50", "label": {"merchant": "Argos", "amount": 60.5, "category": "shopping"}}
+{"line": "CARD PAYMENT TO UBER *TRIP ON 25/07 37.34", "label": {"merchant": "Uber", "amount": 37.34, "category": "transport"}}
+{"line": "STEAMGAMES.COM 4259 74178 31.94 GBP", "label": {"merchant": "Steam", "amount": 31.94, "category": "entertainment"}}
+{"line": "ATM WDL NATWEST 59441 38.23 GBP", "label": {"merchant": "ATM", "amount": 38.23, "category": "cash"}}
+{"line": "13/04 VIRGIN MEDIA MANCHESTER -85.64", "label": {"merchant": "Virgin Media", "amount": 85.64, "category": "bills"}}
+{"line": "CONTACTLESS SAINSBURY'S LOCAL \u00a337.04", "label": {"merchant": "Sainsbury's", "amount": 37.04, "category": "groceries"}}
+{"line": "DD EE & T-MOBILE REF 23069 \u00a358.24", "label": {"merchant": "EE", "amount": 58.24, "category": "bills"}}
+{"line": "CARD PAYMENT TO NETFLIX INTERNATIONAL ON 05/02 16.84", "label": {"merchant": "Netflix", "amount": 16.84, "category": "subscriptions"}}
+{"line": "03/06 STEAMGAMES.COM 4259 -58.24", "label": {"merchant": "Steam", "amount": 58.24, "category": "entertainment"}}
+{"line": "28/09 CASH BARCLAYS ATM CARDIFF -111.39", "label": {"merchant": "ATM", "amount": 111.39, "category": "cash"}}
+{"line": "DISNEY PLUS 22903 5.41 GBP", "label": {"merchant": "Disney+", "amount": 5.41, "category": "subscriptions"}}
+{"line": "CONTACTLESS ODEON CINEMAS \u00a321.94", "label": {"merchant": "Odeon", "amount": 21.94, "category": "entertainment"}}
+{"line": "DELIVEROO 64008 38.27 GBP", "label": {"merchant": "Deliveroo", "amount": 38.27, "category": "eating_out"}}
+{"line": "CARD PAYMENT TO AMZNPRIME*AB12C ON 28/07 66.36", "label": {"merchant": "Amazon Prime", "amount": 66.36, "category": "subscriptions"}}
+{"line": "CARD PAYMENT TO ASOS.COM LTD ON 21/05 45.23", "label": {"merchant": "ASOS", "amount": 45.23, "category": "shopping"}}
+{"line": "CONTACTLESS NANDO'S CHICKENLAND \u00a333.01", "label": {"merchant": "Nando's", "amount": 33.01, "category": "eating_out"}}
+{"line": "VIRGIN MEDIA PYMTS 49599 86.44 GBP", "label": {"merchant": "Virgin Media", "amount": 86.44, "category": "bills"}}
+{"line": "UBER *TRIP CARDIFF 19/06 \u00a339.98", "label": {"merchant": "Uber", "amount": 39.98, "category": "transport"}}
+{"line": "01/10 PRET A MANGER (EUROPE) BATH -11.93", "label": {"merchant": "Pret", "amount": 11.93, "category": "eating_out"}}
+{"line": "DD ODEON BRISTOL REF 89569 \u00a324.38", "label": {"merchant": "Odeon", "amount": 24.38, "category": "entertainment"}}
+{"line": "DD STEAMGAMES.COM 4259 REF 96400 \u00a323.08", "label": {"merchant": "Steam", "amount": 23.08, "category": "entertainment"}}
+{"line": "26/08 ASOS.COM LTD BATH -127.69", "label": {"merchant": "ASOS", "amount": 127.69, "category": "shopping"}}
+{"line": "AMAZON PRIME*UK 36318 37.84 GBP", "label": {"merchant": "Amazon Prime", "amount": 37.84, "category": "subscriptions"}}
+{"line": "TFL.GOV.UK/CP 48684 12.22 GBP", "label": {"merchant": "TfL", "amount": 12.22, "category": "transport"}}
+{"line": "CONTACTLESS BOOTS 1137 LONDON \u00a352.61", "label": {"merchant": "Boots", "amount": 52.61, "category": "shopping"}}
+{"line": "DD BOOTS UK LTD REF 11824 \u00a341.44", "label": {"merchant": "Boots", "amount": 41.44, "category": "shopping"}}
+{"line": "13/11 NANDO'S CHICKENLAND MANCHESTER -28.32", "label": {"merchant": "Nando's", "amount": 28.32, "category": "eating_out"}}
+{"line": "DD LIDL UK REF 18285 \u00a348.54", "label": {"merchant": "Lidl", "amount": 48.54, "category": "groceries"}}
+{"line": "AMZ*AMAZON.CO.UK 15943 206.67 GBP", "label": {"merchant": "Amazon", "amount": 206.67, "category": "shopping"}}
+{"line": "SAINSBURYS S/MKTS MANCHESTER 05/07 \u00a335.57", "label": {"merchant": "Sainsbury's", "amount": 35.57, "category": "groceries"}}
+{"line": "DD GREGGS 1823 REF 30253 \u00a36.69", "label": {"merchant": "Greggs", "amount": 6.69, "category": "eating_out"}}
+{"line": "DD THAMES WATER UTIL REF 58566 \u00a352.75", "label": {"merchant": "Thames Water", "amount": 52.75, "category": "bills"}}
+{"line": "UBER *TRIP 94518 21.08 GBP", "label": {"merchant": "Uber", "amount": 21.08, "category": "transport"}}
+{"line": "GREGGS 1823 BRISTOL 22/04 \u00a32.42", "label": {"merchant": "Greggs", "amount": 2.42, "category": "eating_out"}}
+{"line": "AMZN MKTP UK*2H3 36896 150.90 GBP", "label": {"merchant": "Amazon", "amount": 150.9, "category": "shopping"}}
+{"line": "DD ALDI 71 BRISTOL REF 88116 \u00a367.24", "label": {"merchant": "Aldi", "amount": 67.24, "category": "groceries"}}
+{"line": "CARD PAYMENT TO TESCO.COM ON 04/11 35.44", "label": {"merchant": "Tesco", "amount": 35.44, "category": "groceries"}}
+{"line": "CARD PAYMENT TO TFL.GOV.UK/CP ON 06/05 2.19", "label": {"merchant": "TfL", "amount": 2.19, "category": "transport"}}
+{"line": "15/06 TFL TRAVEL CH CARDIFF -11.64", "label": {"merchant": "TfL", "amount": 11.64, "category": "transport"}}
+{"line": "DD AMZNPRIME*AB12C REF 78347 \u00a314.81", "label": {"merchant": "Amazon Prime", "amount": 14.81, "category": "subscriptions"}}
+{"line": "PRET A MANGER (EUROPE) CARDIFF 14/11 \u00a37.12", "label": {"merchant": "Pret", "amount": 7.12, "category": "eating_out"}}
+{"line": "EE & T-MOBILE MANCHESTER 05/02 \u00a345.62", "label": {"merchant": "EE", "amount": 45.62, "category": "bills"}}
+{"line": "20/09 NANDO'S CHICKENLAND CARDIFF -31.48", "label": {"merchant": "Nando's", "amount": 31.48, "category": "eating_out"}}
+{"line": "21/09 VIRGIN MEDIA -57.86", "label": {"merchant": "Virgin Media", "amount": 57.86, "category": "bills"}}
+{"line": "THAMES WATER UTIL 22463 42.58 GBP", "label": {"merchant": "Thames Water", "amount": 42.58, "category": "bills"}}
+{"line": "DELIVEROO.CO.UK 21957 26.08 GBP", "label": {"merchant": "Deliveroo", "amount": 26.08, "category": "eating_out"}}
+{"line": "18/01 TM *TICKETMASTER LONDON -31.10", "label": {"merchant": "Ticketmaster", "amount": 31.1, "category": "entertainment"}}
+{"line": "CONTACTLESS SPOTIFY P1A2B3 \u00a312.74", "label": {"merchant": "Spotify", "amount": 12.74, "category": "subscriptions"}}
+{"line": "DD PRET A MANGER REF 39392 \u00a38.40", "label": {"merchant": "Pret", "amount": 8.4, "category": "eating_out"}}
+{"line": "CASH WITHDRAWAL LNK 66244 30.56 GBP", "label": {"merchant": "ATM", "amount": 30.56, "category": "cash"}}
+{"line": "DD CASH BARCLAYS ATM REF 13441 \u00a3116.58", "label": {"merchant": "ATM", "amount": 116.58, "category": "cash"}}
+{"line": "DISNEY PLUS 50499 10.57 GBP", "label": {"merchant": "Disney+", "amount": 10.57, "category": "subscriptions"}}
+{"line": "CARD PAYMENT TO DELIVEROO ON 05/12 23.58", "label": {"merchant": "Deliveroo", "amount": 23.58, "category": "eating_out"}}
+{"line": "CONTACTLESS TESCO STORE CARDIFF \u00a313.74", "label": {"merchant": "Tesco", "amount": 13.74, "category": "groceries"}}
+{"line": "DD PRET A MANGER REF 90981 \u00a39.49", "label": {"merchant": "Pret", "amount": 9.49, "category": "eating_out"}}
+{"line": "20/08 SAINSBURY'S LOCAL CARDIFF -75.11", "label": {"merchant": "Sainsbury's", "amount": 75.11, "category": "groceries"}}
+{"line": "NANDO'S CHICKENLAND 98930 16.76 GBP", "label": {"merchant": "Nando's", "amount": 16.76, "category": "eating_out"}}
+{"line": "AMZNPRIME*AB12C CARDIFF 20/01 \u00a348.80", "label": {"merchant": "Amazon Prime", "amount": 48.8, "category": "subscriptions"}}
+{"line": "CARD PAYMENT TO UBER* TRIP HELP.UBER.COM ON 11/02 16.25", "label": {"merchant": "Uber", "amount": 16.25, "category": "transport"}}
+{"line": "CONTACTLESS EE LIMITED MANCHESTER \u00a347.35", "label": {"merchant": "EE", "amount": 47.35, "category": "bills"}}
+{"line": "CONTACTLESS ALDI 71 BRISTOL CARDIFF \u00a334.78", "label": {"merchant": "Aldi", "amount": 34.78, "category": "groceries"}}
+{"line": "CONTACTLESS THAMES WATER UTIL BRISTOL \u00a348.67", "label": {"merchant": "Thames Water", "amount": 48.67, "category": "bills"}}
+{"line": "14/02 TRAINLINE BRISTOL -113.77", "label": {"merchant": "Trainline", "amount": 113.77, "category": "transport"}}
+{"line": "CONTACTLESS THAMES WATER UTIL \u00a349.44", "label": {"merchant": "Thames Water", "amount": 49.44, "category": "bills"}}
+{"line": "ODEON CINEMAS BATH 12/12 \u00a311.70", "label": {"merchant": "Odeon", "amount": 11.7, "category": "entertainment"}}
+{"line": "TICKETMASTER UK 95918 39.20 GBP", "label": {"merchant": "Ticketmaster", "amount": 39.2, "category": "entertainment"}}
+{"line": "CONTACTLESS ALDI STORES MANCHESTER \u00a318.29", "label": {"merchant": "Aldi", "amount": 18.29, "category": "groceries"}}
+{"line": "11/03 ASOS.COM -139.53", "label": {"merchant": "ASOS", "amount": 139.53, "category": "shopping"}}
+{"line": "ALDI 71 BRISTOL 50685 40.17 GBP", "label": {"merchant": "Aldi", "amount": 40.17, "category": "groceries"}}
+{"line": "VIRGIN MEDIA 90610 54.37 GBP", "label": {"merchant": "Virgin Media", "amount": 54.37, "category": "bills"}}
+{"line": "DD DISNEY PLUS REF 95437 \u00a38.04", "label": {"merchant": "Disney+", "amount": 8.04, "category": "subscriptions"}}
+{"line": "CARD PAYMENT TO UBER *TRIP ON 04/06 16.93", "label": {"merchant": "Uber", "amount": 16.93, "category": "transport"}}
+{"line": "17/09 NETFLIX INTERNATIONAL CARDIFF -13.40", "label": {"merchant": "Netflix", "amount": 13.4, "category": "subscriptions"}}
+{"line": "CONTACTLESS TRAINLINE BATH \u00a356.03", "label": {"merchant": "Trainline", "amount": 56.03, "category": "transport"}}
+{"line": "STEAM PURCHASE 47243 38.96 GBP", "label": {"merchant": "Steam", "amount": 38.96, "category": "entertainment"}}
+{"line": "DD NANDOS 0412 REF 96980 \u00a335.05", "label": {"merchant": "Nando's", "amount": 35.05, "category": "eating_out"}}
+{"line": "20/12 TFL.GOV.UK/CP LONDON -13.92", "label": {"merchant": "TfL", "amount": 13.92, "category": "transport"}}
+{"line": "PRET A MANGER 99838 8.03 GBP", "label": {"merchant": "Pret", "amount": 8.03, "category": "eating_out"}}
+{"line": "DD NETFLIX INTERNATIONAL REF 33627 \u00a36.21", "label": {"merchant": "Netflix", "amount": 6.21, "category": "subscriptions"}}
+{"line": "CARD PAYMENT TO UBER *TRIP ON 05/02 17.62", "label": {"merchant": "Uber", "amount": 17.62, "category": "transport"}}
+{"line": "DD CASH BARCLAYS ATM REF 54140 \u00a3159.74", "label": {"merchant": "ATM", "amount": 159.74, "category": "cash"}}
+{"line": "CARD PAYMENT TO ODEON CINEMAS ON 27/12 21.60", "label": {"merchant": "Odeon", "amount": 21.6, "category": "entertainment"}}
+{"line": "STEAMGAMES.COM 4259 BATH 22/12 \u00a354.45", "label": {"merchant": "Steam", "amount": 54.45, "category": "entertainment"}}
+{"line": "CONTACTLESS VIRGIN MEDIA MANCHESTER \u00a364.69", "label": {"merchant": "Virgin Media", "amount": 64.69, "category": "bills"}}
+{"line": "DD TM *TICKETMASTER REF 60052 \u00a345.22", "label": {"merchant": "Ticketmaster", "amount": 45.22, "category": "entertainment"}}
+{"line": "CARD PAYMENT TO NETFLIX.COM ON 02/11 11.86", "label": {"merchant": "Netflix", "amount": 11.86, "category": "subscriptions"}}
+{"line": "10/02 CASH BARCLAYS ATM BRISTOL -80.53", "label": {"merchant": "ATM", "amount": 80.53, "category": "cash"}}
+{"line": "CONTACTLESS NANDOS 0412 LONDON \u00a325.18", "label": {"merchant": "Nando's", "amount": 25.18, "category": "eating_out"}}
+{"line": "TESCO EXPRESS 39430 51.54 GBP", "label": {"merchant": "Tesco", "amount": 51.54, "category": "groceries"}}
+{"line": "05/01 TESCO.COM LONDON -40.29", "label": {"merchant": "Tesco", "amount": 40.29, "category": "groceries"}}
+{"line": "20/01 TM *TICKETMASTER CARDIFF -81.42", "label": {"merchant": "Ticketmaster", "amount": 81.42, "category": "entertainment"}}
+{"line": "DD TESCO STORE REF 41147 \u00a332.94", "label": {"merchant": "Tesco", "amount": 32.94, "category": "groceries"}}
+{"line": "04/08 PRET A MANGER (EUROPE) BRISTOL -4.10", "label": {"merchant": "Pret", "amount": 4.1, "category": "eating_out"}}
+{"line": "CARD PAYMENT TO SPOTIFY UK ON 14/01 6.20", "label": {"merchant": "Spotify", "amount": 6.2, "category": "subscriptions"}}
+{"line": "12/02 GREGGS PLC MANCHESTER -3.68", "label": {"merchant": "Greggs", "amount": 3.68, "category": "eating_out"}}
+{"line": "DD SPOTIFY UK REF 15706 \u00a312.09", "label": {"merchant": "Spotify", "amount": 12.09, "category": "subscriptions"}}
+{"line": "26/02 AMZN MKTP UK*2H3 BATH -99.17", "label": {"merchant": "Amazon", "amount": 99.17, "category": "shopping"}}
+{"line": "DD FIRSTGROUP BUS REF 81567 \u00a34.93", "label": {"merchant": "First Bus", "amount": 4.93, "category": "transport"}}
+{"line": "16/11 DELIVEROO -38.85", "label": {"merchant": "Deliveroo", "amount": 38.85, "category": "eating_out"}}
+{"line": "CONTACTLESS STEAM PURCHASE BATH \u00a310.69", "label": {"merchant": "Steam", "amount": 10.69, "category": "entertainment"}}
+{"line": "CONTACTLESS JS ONLINE GROCERY CARDIFF \u00a336.77", "label": {"merchant": "Sainsbury's", "amount": 36.77, "category": "groceries"}}
+{"line": "UBER* TRIP HELP.UBER.COM BATH 04/06 \u00a315.73", "label": {"merchant": "Uber", "amount": 15.73, "category": "transport"}}
+{"line": "CONTACTLESS BG SERVICES LONDON \u00a3144.06", "label": {"merchant": "British Gas", "amount": 144.06, "category": "bills"}}
+{"line": "GREGGS 1823 BRISTOL 14/10 \u00a38.47", "label": {"merchant": "Greggs", "amount": 8.47, "category": "eating_out"}}
+{"line": "SPOTIFY P1A2B3 65851 9.53 GBP", "label": {"merchant": "Spotify", "amount": 9.53, "category": "subscriptions"}}
+{"line": "TRAINLINE MANCHESTER 14/05 \u00a399.05", "label": {"merchant": "Trainline", "amount": 99.05, "category": "transport"}}
+{"line": "17/12 STEAMGAMES.COM 4259 BATH -57.03", "label": {"merchant": "Steam", "amount": 57.03, "category": "entertainment"}}
+{"line": "DD TRAINLINE REF 40932 \u00a3133.77", "label": {"merchant": "Trainline", "amount": 133.77, "category": "transport"}}
+{"line": "DD ODEON CINEMAS REF 68972 \u00a322.19", "label": {"merchant": "Odeon", "amount": 22.19, "category": "entertainment"}}
+{"line": "DD GREGGS PLC REF 51207 \u00a34.60", "label": {"merchant": "Greggs", "amount": 4.6, "category": "eating_out"}}
+{"line": "AMZ*AMAZON.CO.UK LONDON 16/09 \u00a372.56", "label": {"merchant": "Amazon", "amount": 72.56, "category": "shopping"}}
+{"line": "20/05 SPOTIFY P1A2B3 LONDON -7.41", "label": {"merchant": "Spotify", "amount": 7.41, "category": "subscriptions"}}
+{"line": "CONTACTLESS UBER *TRIP \u00a310.17", "label": {"merchant": "Uber", "amount": 10.17, "category": "transport"}}
+{"line": "18/05 CASH WITHDRAWAL LNK MANCHESTER -197.45", "label": {"merchant": "ATM", "amount": 197.45, "category": "cash"}}
+{"line": "26/06 CASH BARCLAYS ATM LONDON -39.93", "label": {"merchant": "ATM", "amount": 39.93, "category": "cash"}}
+{"line": "CARD PAYMENT TO FIRST BUS BRISTOL ON 01/06 2.49", "label": {"merchant": "First Bus", "amount": 2.49, "category": "transport"}}
+{"line": "DD AMZNPRIME*AB12C REF 50539 \u00a338.20", "label": {"merchant": "Amazon Prime", "amount": 38.2, "category": "subscriptions"}}
+{"line": "DD BG SERVICES REF 19666 \u00a3179.94", "label": {"merchant": "British Gas", "amount": 179.94, "category": "bills"}}
+{"line": "CONTACTLESS TFL.GOV.UK/CP \u00a314.64", "label": {"merchant": "TfL", "amount": 14.64, "category": "transport"}}
+{"line": "CARD PAYMENT TO TICKETMASTER UK ON 17/01 121.43", "label": {"merchant": "Ticketmaster", "amount": 121.43, "category": "entertainment"}}
+{"line": "NETFLIX.COM 20336 6.99 GBP", "label": {"merchant": "Netflix", "amount": 6.99, "category": "subscriptions"}}
+{"line": "NANDOS 0412 79924 16.07 GBP", "label": {"merchant": "Nando's", "amount": 16.07, "category": "eating_out"}}
+{"line": "DD ALDI 71 BRISTOL REF 89316 \u00a342.69", "label": {"merchant": "Aldi", "amount": 42.69, "category": "groceries"}}
+{"line": "DELIVEROO.CO.UK BRISTOL 21/10 \u00a339.80", "label": {"merchant": "Deliveroo", "amount": 39.8, "category": "eating_out"}}
+{"line": "DD AMZ*AMAZON.CO.UK REF 81509 \u00a355.86", "label": {"merchant": "Amazon", "amount": 55.86, "category": "shopping"}}
+{"line": "CARD PAYMENT TO PRET A MANGER (EUROPE) ON 15/02 8.78", "label": {"merchant": "Pret", "amount": 8.78, "category": "eating_out"}}
+{"line": "CARD PAYMENT TO TRAINLINE ON 05/06 66.03", "label": {"merchant": "Trainline", "amount": 66.03, "category": "transport"}}
+{"line": "CONTACTLESS BOOTS 1137 BATH \u00a359.32", "label": {"merchant": "Boots", "amount": 59.32, "category": "shopping"}}
+{"line": "CONTACTLESS DELIVEROO.CO.UK LONDON \u00a319.98", "label": {"merchant": "Deliveroo", "amount": 19.98, "category": "eating_out"}}
+{"line": "CARD PAYMENT TO BG SERVICES ON 24/06 160.98", "label": {"merchant": "British Gas", "amount": 160.98, "category": "bills"}}
+{"line": "CONTACTLESS ODEON BRISTOL BATH \u00a311.51", "label": {"merchant": "Odeon", "amount": 11.51, "category": "entertainment"}}
+{"line": "CARD PAYMENT TO BG SERVICES ON 02/05 110.76", "label": {"merchant": "British Gas", "amount": 110.76, "category": "bills"}}
+{"line": "CONTACTLESS DISNEYPLUS MANCHESTER \u00a310.29", "label": {"merchant": "Disney+", "amount": 10.29, "category": "subscriptions"}}
+{"line": "CONTACTLESS TFL.GOV.UK/CP BRISTOL \u00a313.47", "label": {"merchant": "TfL", "amount": 13.47, "category": "transport"}}
+{"line": "SPOTIFY P1A2B3 MANCHESTER 15/09 \u00a38.34", "label": {"merchant": "Spotify", "amount": 8.34, "category": "subscriptions"}}
+{"line": "TICKETMASTER UK BRISTOL 13/06 \u00a3148.58", "label": {"merchant": "Ticketmaster", "amount": 148.58, "category": "entertainment"}}
+{"line": "CARD PAYMENT TO SPOTIFY P1A2B3 ON 02/01 17.27", "label": {"merchant": "Spotify", "amount": 17.27, "category": "subscriptions"}}
+{"line": "DD TFL.GOV.UK/CP REF 28321 \u00a311.28", "label": {"merchant": "TfL", "amount": 11.28, "category": "transport"}}
+{"line": "CONTACTLESS DELIVEROO MANCHESTER \u00a342.74", "label": {"merchant": "Deliveroo", "amount": 42.74, "category": "eating_out"}}
+{"line": "CONTACTLESS SPOTIFY UK BATH \u00a311.88", "label": {"merchant": "Spotify", "amount": 11.88, "category": "subscriptions"}}
+{"line": "16/05 THAMES WATER MANCHESTER -49.19", "label": {"merchant": "Thames Water", "amount": 49.19, "category": "bills"}}
+{"line": "CARD PAYMENT TO STEAM PURCHASE ON 16/03 58.41", "label": {"merchant": "Steam", "amount": 58.41, "category": "entertainment"}}
+{"line": "CONTACTLESS AMZN MKTP UK*2H3 \u00a3181.41", "label": {"merchant": "Amazon", "amount": 181.41, "category": "shopping"}}
+{"line": "ARGOS RETAIL 36724 29.10 GBP", "label": {"merchant": "Argos", "amount": 29.1, "category": "shopping"}}
+{"line": "CONTACTLESS THAMES WATER \u00a345.09", "label": {"merchant": "Thames Water", "amount": 45.09, "category": "bills"}}
+{"line": "DD SPOTIFY P1A2B3 REF 79878 \u00a39.90", "label": {"merchant": "Spotify", "amount": 9.9, "category": "subscriptions"}}
+{"line": "16/04 DELIVEROO MANCHESTER -30.03", "label": {"merchant": "Deliveroo", "amount": 30.03, "category": "eating_out"}}
+{"line": "NANDO'S CHICKENLAND 74094 29.09 GBP", "label": {"merchant": "Nando's", "amount": 29.09, "category": "eating_out"}}
+{"line": "04/10 DELIVEROO BATH -27.83", "label": {"merchant": "Deliveroo", "amount": 27.83, "category": "eating_out"}}
+{"line": "SPOTIFY UK 20358 10.56 GBP", "label": {"merchant": "Spotify", "amount": 10.56, "category": "subscriptions"}}
+{"line": "07/09 GREGGS 1823 LONDON -8.47", "label": {"merchant": "Greggs", "amount": 8.47, "category": "eating_out"}}
+{"line": "DD SPOTIFY UK REF 79604 \u00a314.35", "label": {"merchant": "Spotify", "amount": 14.35, "category": "subscriptions"}}
+{"line": "CONTACTLESS FIRSTGROUP BUS \u00a34.55", "label": {"merchant": "First Bus", "amount": 4.55, "category": "transport"}}
+{"line": "CARD PAYMENT TO ODEON BRISTOL ON 16/08 11.02", "label": {"merchant": "Odeon", "amount": 11.02, "category": "entertainment"}}
+{"line": "UBER *TRIP 40437 31.70 GBP", "label": {"merchant": "Uber", "amount": 31.7, "category": "transport"}}
+{"line": "SPOTIFY UK CARDIFF 27/03 \u00a314.86", "label": {"merchant": "Spotify", "amount": 14.86, "category": "subscriptions"}}
+{"line": "01/05 TM *TICKETMASTER BRISTOL -71.61", "label": {"merchant": "Ticketmaster", "amount": 71.61, "category": "entertainment"}}
+{"line": "DISNEYPLUS 74738 5.64 GBP", "label": {"merchant": "Disney+", "amount": 5.64, "category": "subscriptions"}}
+{"line": "CARD PAYMENT TO TFL TRAVEL CH ON 06/12 13.06", "label": {"merchant": "TfL", "amount": 13.06, "category": "transport"}}
+{"line": "19/11 AMAZON.CO.UK*AB1CD BATH -67.29", "label": {"merchant": "Amazon", "amount": 67.29, "category": "shopping"}}
+{"line": "CONTACTLESS TRAINLINE MANCHESTER \u00a388.65", "label": {"merchant": "Trainline", "amount": 88.65, "category": "transport"}}
+{"line": "CONTACTLESS ASOS.COM LONDON \u00a325.16", "label": {"merchant": "ASOS", "amount": 25.16, "category": "shopping"}}
+{"line": "FIRSTGROUP BUS 11498 3.79 GBP", "label": {"merchant": "First Bus", "amount": 3.79, "category": "transport"}}
+{"line": "NANDOS 0412 CARDIFF 10/03 \u00a332.53", "label": {"merchant": "Nando's", "amount": 32.53, "category": "eating_out"}}
+{"line": "04/11 ASOS.COM -81.35", "label": {"merchant": "ASOS", "amount": 81.35, "category": "shopping"}}
+{"line": "CARD PAYMENT TO GREGGS 1823 ON 15/12 6.30", "label": {"merchant": "Greggs", "amount": 6.3, "category": "eating_out"}}
+{"line": "CONTACTLESS GREGGS PLC LONDON \u00a34.91", "label": {"merchant": "Greggs", "amount": 4.91, "category": "eating_out"}}
+{"line": "NETFLIX.COM BRISTOL 27/09 \u00a310.81", "label": {"merchant": "Netflix", "amount": 10.81, "category": "subscriptions"}}
+{"line": "UBER* TRIP HELP.UBER.COM 86434 25.47 GBP", "label": {"merchant": "Uber", "amount": 25.47, "category": "transport"}}
+{"line": "EE & T-MOBILE LONDON 17/07 \u00a314.55", "label": {"merchant": "EE", "amount": 14.55, "category": "bills"}}
+{"line": "AMZNPRIME*AB12C 38560 10.20 GBP", "label": {"merchant": "Amazon Prime", "amount": 10.2, "category": "subscriptions"}}
+{"line": "02/02 AMZNPRIME*AB12C MANCHESTER -11.57", "label": {"merchant": "Amazon Prime", "amount": 11.57, "category": "subscriptions"}}
+{"line": "CARD PAYMENT TO JS ONLINE GROCERY ON 21/07 33.72", "label": {"merchant": "Sainsbury's", "amount": 33.72, "category": "groceries"}}
+{"line": "CONTACTLESS BG SERVICES BRISTOL \u00a3102.80", "label": {"merchant": "British Gas", "amount": 102.8, "category": "bills"}}
+{"line": "CARD PAYMENT TO TFL.GOV.UK/CP ON 05/12 10.50", "label": {"merchant": "TfL", "amount": 10.5, "category": "transport"}}
+{"line": "TM *TICKETMASTER 65591 20.45 GBP", "label": {"merchant": "Ticketmaster", "amount": 20.45, "category": "entertainment"}}
+{"line": "CONTACTLESS SPOTIFY P1A2B3 LONDON \u00a310.55", "label": {"merchant": "Spotify", "amount": 10.55, "category": "subscriptions"}}
+{"line": "SAINSBURYS S/MKTS LONDON 03/02 \u00a389.61", "label": {"merchant": "Sainsbury's", "amount": 89.61, "category": "groceries"}}
+{"line": "SAINSBURYS S/MKTS 02/07 \u00a350.77", "label": {"merchant": "Sainsbury's", "amount": 50.77, "category": "groceries"}}
+{"line": "FIRST BUS BRISTOL MANCHESTER 10/04 \u00a34.16", "label": {"merchant": "First Bus", "amount": 4.16, "category": "transport"}}
+{"line": "DELIVEROO.CO.UK 78321 31.06 GBP", "label": {"merchant": "Deliveroo", "amount": 31.06, "category": "eating_out"}}
+{"line": "DD FIRST BUS BRISTOL REF 82856 \u00a33.65", "label": {"merchant": "First Bus", "amount": 3.65, "category": "transport"}}
+{"line": "11/12 EE & T-MOBILE MANCHESTER -12.34", "label": {"merchant": "EE", "amount": 12.34, "category": "bills"}}
+{"line": "DD THAMES WATER UTIL REF 49418 \u00a327.46", "label": {"merchant": "Thames Water", "amount": 27.46, "category": "bills"}}
+{"line": "CASH BARCLAYS ATM CARDIFF 14/09 \u00a3144.44", "label": {"merchant": "ATM", "amount": 144.44, "category": "cash"}}
+{"line": "TFL TRAVEL CH 22119 7.05 GBP", "label": {"merchant": "TfL", "amount": 7.05, "category": "transport"}}
+{"line": "SPOTIFY P1A2B3 15183 14.70 GBP", "label": {"merchant": "Spotify", "amount": 14.7, "category": "subscriptions"}}
+{"line": "DD CASH BARCLAYS ATM REF 72835 \u00a323.83", "label": {"merchant": "ATM", "amount": 23.83, "category": "cash"}}
+{"line": "UBER *TRIP LONDON 24/02 \u00a335.56", "label": {"merchant": "Uber", "amount": 35.56, "category": "transport"}}
+{"line": "CONTACTLESS FIRST BUS BRISTOL MANCHESTER \u00a34.78", "label": {"merchant": "First Bus", "amount": 4.78, "category": "transport"}}
+{"line": "VIRGIN MEDIA PYMTS 22924 59.69 GBP", "label": {"merchant": "Virgin Media", "amount": 59.69, "category": "bills"}}
+{"line": "STEAM PURCHASE 15992 58.94 GBP", "label": {"merchant": "Steam", "amount": 58.94, "category": "entertainment"}}
+{"line": "AMAZON PRIME*UK MANCHESTER 19/10 \u00a382.77", "label": {"merchant": "Amazon Prime", "amount": 82.77, "category": "subscriptions"}}
+{"line": "CONTACTLESS PRET A MANGER CARDIFF \u00a34.37", "label": {"merchant": "Pret", "amount": 4.37, "category": "eating_out"}}
+{"line": "06/12 DELIVEROO CARDIFF -20.49", "label": {"merchant": "Deliveroo", "amount": 20.49, "category": "eating_out"}}
+{"line": "CARD PAYMENT TO TRAINLINE.COM ON 02/02 26.47", "label": {"merchant": "Trainline", "amount": 26.47, "category": "transport"}}
+{"line": "23/03 SAINSBURYS S/MKTS BRISTOL -84.78", "label": {"merchant": "Sainsbury's", "amount": 84.78, "category": "groceries"}}
+{"line": "DD UBER* TRIP HELP.UBER.COM REF 10866 \u00a323.19", "label": {"merchant": "Uber", "amount": 23.19, "category": "transport"}}
+{"line": "DD SPOTIFY P1A2B3 REF 75826 \u00a312.62", "label": {"merchant": "Spotify", "amount": 12.62, "category": "subscriptions"}}
+{"line": "CARD PAYMENT TO TICKETMASTER UK ON 17/03 110.72", "label": {"merchant": "Ticketmaster", "amount": 110.72, "category": "entertainment"}}
+{"line": "UBER* TRIP HELP.UBER.COM 63218 27.07 GBP", "label": {"merchant": "Uber", "amount": 27.07, "category": "transport"}}
+{"line": "CARD PAYMENT TO VIRGIN MEDIA PYMTS ON 27/02 61.73", "label": {"merchant": "Virgin Media", "amount": 61.73, "category": "bills"}}
+{"line": "CONTACTLESS ATM WDL NATWEST CARDIFF \u00a3133.48", "label": {"merchant": "ATM", "amount": 133.48, "category": "cash"}}
+{"line": "CONTACTLESS AMAZON.CO.UK*AB1CD \u00a36.32", "label": {"merchant": "Amazon", "amount": 6.32, "category": "shopping"}}
+{"line": "CASH WITHDRAWAL LNK LONDON 28/12 \u00a3195.03", "label": {"merchant": "ATM", "amount": 195.03, "category": "cash"}}
+{"line": "19/11 EE & T-MOBILE MANCHESTER -23.55", "label": {"merchant": "EE", "amount": 23.55, "category": "bills"}}
+{"line": "CARD PAYMENT TO TRAINLINE.COM ON 27/07 130.60", "label": {"merchant": "Trainline", "amount": 130.6, "category": "transport"}}
+{"line": "CONTACTLESS PRET A MANGER (EUROPE) CARDIFF \u00a34.46", "label": {"merchant": "Pret", "amount": 4.46, "category": "eating_out"}}
+{"line": "DD STEAMGAMES.COM 4259 REF 40427 \u00a359.34", "label": {"merchant": "Steam", "amount": 59.34, "category": "entertainment"}}
+{"line": "DD TM *TICKETMASTER REF 45825 \u00a329.88", "label": {"merchant": "Ticketmaster", "amount": 29.88, "category": "entertainment"}}
+{"line": "STEAMGAMES.COM 4259 86791 59.58 GBP", "label": {"merchant": "Steam", "amount": 59.58, "category": "entertainment"}}
+{"line": "ASOS.COM LTD 45123 64.45 GBP", "label": {"merchant": "ASOS", "amount": 64.45, "category": "shopping"}}
+{"line": "CARD PAYMENT TO TFL.GOV.UK/CP ON 12/02 6.94", "label": {"merchant": "TfL", "amount": 6.94, "category": "transport"}}
+{"line": "TESCO STORES 3297 66489 113.33 GBP", "label": {"merchant": "Tesco", "amount": 113.33, "category": "groceries"}}
+{"line": "VIRGIN MEDIA BRISTOL 12/09 \u00a361.20", "label": {"merchant": "Virgin Media", "amount": 61.2, "category": "bills"}}
+{"line": "CONTACTLESS DISNEY PLUS BATH \u00a38.59", "label": {"merchant": "Disney+", "amount": 8.59, "category": "subscriptions"}}
+{"line": "CARD PAYMENT TO BOOTS 1137 ON 13/03 54.36", "label": {"merchant": "Boots", "amount": 54.36, "category": "shopping"}}
+{"line": "NANDOS 0412 CARDIFF 09/07 \u00a319.84", "label": {"merchant": "Nando's", "amount": 19.84, "category": "eating_out"}}
+{"line": "CARD PAYMENT TO EE & T-MOBILE ON 20/04 49.13", "label": {"merchant": "EE", "amount": 49.13, "category": "bills"}}
+{"line": "CONTACTLESS LIDL UK MANCHESTER \u00a312.94", "label": {"merchant": "Lidl", "amount": 12.94, "category": "groceries"}}
+{"line": "11/10 DELIVEROO.CO.UK BATH -26.21", "label": {"merchant": "Deliveroo", "amount": 26.21, "category": "eating_out"}}
+{"line": "EE & T-MOBILE 74357 25.71 GBP", "label": {"merchant": "EE", "amount": 25.71, "category": "bills"}}
+{"line": "AMAZON PRIME*UK 36188 75.38 GBP", "label": {"merchant": "Amazon Prime", "amount": 75.38, "category": "subscriptions"}}
+{"line": "DD AMZNPRIME*AB12C REF 37479 \u00a394.75", "label": {"merchant": "Amazon Prime", "amount": 94.75, "category": "subscriptions"}}
+{"line": "VIRGIN MEDIA PYMTS 16/03 \u00a376.85", "label": {"merchant": "Virgin Media", "amount": 76.85, "category": "bills"}}
+{"line": "03/08 PRET A MANGER (EUROPE) CARDIFF -5.18", "label": {"merchant": "Pret", "amount": 5.18, "category": "eating_out"}}
+{"line": "02/06 EE & T-MOBILE MANCHESTER -39.11", "label": {"merchant": "EE", "amount": 39.11, "category": "bills"}}
+{"line": "CARD PAYMENT TO DISNEYPLUS ON 21/10 8.83", "label": {"merchant": "Disney+", "amount": 8.83, "category": "subscriptions"}}
+{"line": "CONTACTLESS AMAZON PRIME*UK CARDIFF \u00a393.52", "label": {"merchant": "Amazon Prime", "amount": 93.52, "category": "subscriptions"}}
+{"line": "DD NANDOS 0412 REF 70694 \u00a316.99", "label": {"merchant": "Nando's", "amount": 16.99, "category": "eating_out"}}
+{"line": "CARD PAYMENT TO ODEON BRISTOL ON 16/02 22.95", "label": {"merchant": "Odeon", "amount": 22.95, "category": "entertainment"}}
+{"line": "10/06 THAMES WATER BATH -66.03", "label": {"merchant": "Thames Water", "amount": 66.03, "category": "bills"}}
+{"line": "CONTACTLESS STEAM PURCHASE CARDIFF \u00a314.79", "label": {"merchant": "Steam", "amount": 14.79, "category": "entertainment"}}
+{"line": "28/06 DELIVEROO.CO.UK BRISTOL -14.22", "label": {"merchant": "Deliveroo", "amount": 14.22, "category": "eating_out"}}
+{"line": "06/09 LIDL GB MANCHESTER -48.69", "label": {"merchant": "Lidl", "amount": 48.69, "category": "groceries"}}
+{"line": "CARD PAYMENT TO DELIVEROO ON 06/03 30.48", "label": {"merchant": "Deliveroo", "amount": 30.48, "category": "eating_out"}}
+{"line": "DD ASOS.COM LTD REF 60965 \u00a371.63", "label": {"merchant": "ASOS", "amount": 71.63, "category": "shopping"}}
+{"line": "04/09 TESCO STORES 3297 MANCHESTER -85.45", "label": {"merchant": "Tesco", "amount": 85.45, "category": "groceries"}}
+{"line": "GREGGS 1823 88246 4.28 GBP", "label": {"merchant": "Greggs", "amount": 4.28, "category": "eating_out"}}
+{"line": "BG SERVICES 98288 125.58 GBP", "label": {"merchant": "British Gas", "amount": 125.58, "category": "bills"}}
+{"line": "DD ARGOS LTD REF 25448 \u00a3161.72", "label": {"merchant": "Argos", "amount": 161.72, "category": "shopping"}}
+{"line": "13/07 FIRST BUS BRISTOL MANCHESTER -3.22", "label": {"merchant": "First Bus", "amount": 3.22, "category": "transport"}}
+{"line": "CONTACTLESS TFL TRAVEL CH MANCHESTER \u00a39.47", "label": {"merchant": "TfL", "amount": 9.47, "category": "transport"}}
+{"line": "DD TFL TRAVEL CH REF 27895 \u00a34.43", "label": {"merchant": "TfL", "amount": 4.43, "category": "transport"}}
+{"line": "DD UBER* TRIP HELP.UBER.COM REF 64477 \u00a333.72", "label": {"merchant": "Uber", "amount": 33.72, "category": "transport"}}
+{"line": "ARGOS LTD LONDON 10/01 \u00a3169.26", "label": {"merchant": "Argos", "amount": 169.26, "category": "shopping"}}
+{"line": "CONTACTLESS FIRSTGROUP BUS MANCHESTER \u00a34.15", "label": {"merchant": "First Bus", "amount": 4.15, "category": "transport"}}
+{"line": "LIDL GB 38644 21.68 GBP", "label": {"merchant": "Lidl", "amount": 21.68, "category": "groceries"}}
+{"line": "CARD PAYMENT TO THAMES WATER UTIL ON 15/05 25.12", "label": {"merchant": "Thames Water", "amount": 25.12, "category": "bills"}}
+{"line": "CASH WITHDRAWAL LNK LONDON 26/12 \u00a3165.18", "label": {"merchant": "ATM", "amount": 165.18, "category": "cash"}}
+{"line": "20/03 ARGOS RETAIL LONDON -75.32", "label": {"merchant": "Argos", "amount": 75.32, "category": "shopping"}}
+{"line": "TM *TICKETMASTER 52421 46.90 GBP", "label": {"merchant": "Ticketmaster", "amount": 46.9, "category": "entertainment"}}
+{"line": "DD ARGOS LTD REF 17770 \u00a364.19", "label": {"merchant": "Argos", "amount": 64.19, "category": "shopping"}}
+{"line": "CARD PAYMENT TO NANDOS 0412 ON 23/06 40.21", "label": {"merchant": "Nando's", "amount": 40.21, "category": "eating_out"}}
+{"line": "CARD PAYMENT TO ODEON BRISTOL ON 14/07 26.56", "label": {"merchant": "Odeon", "amount": 26.56, "category": "entertainment"}}
+{"line": "ALDI STORES MANCHESTER 24/05 \u00a352.52", "label": {"merchant": "Aldi", "amount": 52.52, "category": "groceries"}}
+{"line": "VIRGIN MEDIA 15/11 \u00a386.77", "label": {"merchant": "Virgin Media", "amount": 86.77, "category": "bills"}}
+{"line": "DD ARGOS RETAIL REF 74843 \u00a376.78", "label": {"merchant": "Argos", "amount": 76.78, "category": "shopping"}}
+{"line": "DD NANDOS 0412 REF 55054 \u00a320.62", "label": {"merchant": "Nando's", "amount": 20.62, "category": "eating_out"}}
+{"line": "04/03 ASOS.COM BRISTOL -117.19", "label": {"merchant": "ASOS", "amount": 117.19, "category": "shopping"}}
+{"line": "CARD PAYMENT TO VIRGIN MEDIA ON 10/03 25.04", "label": {"merchant": "Virgin Media", "amount": 25.04, "category": "bills"}}
+{"line": "ALDI 71 BRISTOL 50043 54.09 GBP", "label": {"merchant": "Aldi", "amount": 54.09, "category": "groceries"}}
+{"line": "04/01 BOOTS 1137 -42.87", "label": {"merchant": "Boots", "amount": 42.87, "category": "shopping"}}
+{"line": "DD EE & T-MOBILE REF 55032 \u00a313.90", "label": {"merchant": "EE", "amount": 13.9, "category": "bills"}}
+{"line": "03/04 TICKETMASTER UK CARDIFF -35.68", "label": {"merchant": "Ticketmaster", "amount": 35.68, "category": "entertainment"}}
+{"line": "ALDI STORES 27451 59.81 GBP", "label": {"merchant": "Aldi", "amount": 59.81, "category": "groceries"}}
+{"line": "DD AMZ*AMAZON.CO.UK REF 31511 \u00a3248.26", "label": {"merchant": "Amazon", "amount": 248.26, "category": "shopping"}}
+{"line": "20/11 VIRGIN MEDIA CARDIFF -47.83", "label": {"merchant": "Virgin Media", "amount": 47.83, "category": "bills"}}
+{"line": "CARD PAYMENT TO CASH WITHDRAWAL LNK ON 24/07 51.28", "label": {"merchant": "ATM", "amount": 51.28, "category": "cash"}}
+{"line": "THAMES WATER 88644 35.73 GBP", "label": {"merchant": "Thames Water", "amount": 35.73, "category": "bills"}}
+{"line": "10/04 BOOTS 1137 -37.63", "label": {"merchant": "Boots", "amount": 37.63, "category": "shopping"}}
+{"line": "DISNEY PLUS 24777 8.06 GBP", "label": {"merchant": "Disney+", "amount": 8.06, "category": "subscriptions"}}
+{"line": "DD FIRST BUS BRISTOL REF 60703 \u00a34.00", "label": {"merchant": "First Bus", "amount": 4.0, "category": "transport"}}
+{"line": "DD CASH BARCLAYS ATM REF 19567 \u00a3169.40", "label": {"merchant": "ATM", "amount": 169.4, "category": "cash"}}
+{"line": "CARD PAYMENT TO TESCO STORES 3297 ON 26/07 71.72", "label": {"merchant": "Tesco", "amount": 71.72, "category": "groceries"}}
+{"line": "CONTACTLESS PRET A MANGER (EUROPE) \u00a38.66", "label": {"merchant": "Pret", "amount": 8.66, "category": "eating_out"}}
+{"line": "SPOTIFY P1A2B3 BRISTOL 17/04 \u00a312.45", "label": {"merchant": "Spotify", "amount": 12.45, "category": "subscriptions"}}
+{"line": "23/07 SPOTIFY UK BATH -9.92", "label": {"merchant": "Spotify", "amount": 9.92, "category": "subscriptions"}}
+{"line": "SAINSBURY'S LOCAL MANCHESTER 20/01 \u00a329.16", "label": {"merchant": "Sainsbury's", "amount": 29.16, "category": "groceries"}}
+{"line": "ASOS.COM LTD 05/12 \u00a3114.35", "label": {"merchant": "ASOS", "amount": 114.35, "category": "shopping"}}
+{"line": "DD TRAINLINE REF 45227 \u00a373.53", "label": {"merchant": "Trainline", "amount": 73.53, "category": "transport"}}
+{"line": "BOOTS UK LTD CARDIFF 09/09 \u00a353.53", "label": {"merchant": "Boots", "amount": 53.53, "category": "shopping"}}
+{"line": "NANDO'S CHICKENLAND CARDIFF 17/06 \u00a334.64", "label": {"merchant": "Nando's", "amount": 34.64, "category": "eating_out"}}
+{"line": "CARD PAYMENT TO EE & T-MOBILE ON 19/11 52.97", "label": {"merchant": "EE", "amount": 52.97, "category": "bills"}}
+{"line": "FIRST BUS BRISTOL BRISTOL 16/06 \u00a34.96", "label": {"merchant": "First Bus", "amount": 4.96, "category": "transport"}}
+{"line": "TFL.GOV.UK/CP LONDON 11/04 \u00a34.33", "label": {"merchant": "TfL", "amount": 4.33, "category": "transport"}}
+{"line": "DD BOOTS UK LTD REF 16903 \u00a321.24", "label": {"merchant": "Boots", "amount": 21.24, "category": "shopping"}}
+{"line": "TRAINLINE BRISTOL 15/05 \u00a337.46", "label": {"merchant": "Trainline", "amount": 37.46, "category": "transport"}}
+{"line": "DELIVEROO.CO.UK 91620 14.85 GBP", "label": {"merchant": "Deliveroo", "amount": 14.85, "category": "eating_out"}}
+{"line": "CONTACTLESS FIRST BUS BRISTOL \u00a33.86", "label": {"merchant": "First Bus", "amount": 3.86, "category": "transport"}}
+{"line": "DD TESCO.COM REF 11257 \u00a3112.09", "label": {"merchant": "Tesco", "amount": 112.09, "category": "groceries"}}
+{"line": "07/09 DELIVEROO BRISTOL -12.05", "label": {"merchant": "Deliveroo", "amount": 12.05, "category": "eating_out"}}
+{"line": "CARD PAYMENT TO THAMES WATER UTIL ON 02/04 44.60", "label": {"merchant": "Thames Water", "amount": 44.6, "category": "bills"}}
+{"line": "04/09 THAMES WATER MANCHESTER -55.04", "label": {"merchant": "Thames Water", "amount": 55.04, "category": "bills"}}
+{"line": "DD AMZN MKTP UK*2H3 REF 41034 \u00a3205.71", "label": {"merchant": "Amazon", "amount": 205.71, "category": "shopping"}}
+{"line": "CONTACTLESS PRET A MANGER (EUROPE) BATH \u00a35.35", "label": {"merchant": "Pret", "amount": 5.35, "category": "eating_out"}}
+{"line": "DD ALDI 71 BRISTOL REF 68925 \u00a375.77", "label": {"merchant": "Aldi", "amount": 75.77, "category": "groceries"}}
+{"line": "VIRGIN MEDIA 44735 45.41 GBP", "label": {"merchant": "Virgin Media", "amount": 45.41, "category": "bills"}}
+{"line": "23/10 ATM WDL NATWEST -32.78", "label": {"merchant": "ATM", "amount": 32.78, "category": "cash"}}
+{"line": "UBER *TRIP BATH 13/09 \u00a334.42", "label": {"merchant": "Uber", "amount": 34.42, "category": "transport"}}
+{"line": "CARD PAYMENT TO ASOS.COM LTD ON 28/08 53.24", "label": {"merchant": "ASOS", "amount": 53.24, "category": "shopping"}}
+{"line": "BOOTS 1137 BRISTOL 01/01 \u00a334.36", "label": {"merchant": "Boots", "amount": 34.36, "category": "shopping"}}
+{"line": "19/05 TFL TRAVEL CH MANCHESTER -4.58", "label": {"merchant": "TfL", "amount": 4.58, "category": "transport"}}
+{"line": "03/06 TESCO STORE LONDON -119.67", "label": {"merchant": "Tesco", "amount": 119.67, "category": "groceries"}}
+{"line": "DD SAINSBURY'S LOCAL REF 13864 \u00a3103.82", "label": {"merchant": "Sainsbury's", "amount": 103.82, "category": "groceries"}}
+{"line": "CARD PAYMENT TO BRITISH GAS ON 09/08 135.65", "label": {"merchant": "British Gas", "amount": 135.65, "category": "bills"}}
+{"line": "14/09 SAINSBURY'S LOCAL CARDIFF -68.71", "label": {"merchant": "Sainsbury's", "amount": 68.71, "category": "groceries"}}
+{"line": "CONTACTLESS SAINSBURYS S/MKTS \u00a312.39", "label": {"merchant": "Sainsbury's", "amount": 12.39, "category": "groceries"}}
+{"line": "AMAZON.CO.UK*AB1CD 12/08 \u00a3248.55", "label": {"merchant": "Amazon", "amount": 248.55, "category": "shopping"}}
+{"line": "DD STEAMGAMES.COM 4259 REF 13416 \u00a330.63", "label": {"merchant": "Steam", "amount": 30.63, "category": "entertainment"}}
+{"line": "DELIVEROO.CO.UK 86544 31.70 GBP", "label": {"merchant": "Deliveroo", "amount": 31.7, "category": "eating_out"}}
+{"line": "18/12 FIRST BUS BRISTOL BATH -5.90", "label": {"merchant": "First Bus", "amount": 5.9, "category": "transport"}}
+{"line": "CONTACTLESS ODEON BRISTOL LONDON \u00a329.92", "label": {"merchant": "Odeon", "amount": 29.92, "category": "entertainment"}}
+{"line": "DD DELIVEROO.CO.UK REF 84403 \u00a338.60", "label": {"merchant": "Deliveroo", "amount": 38.6, "category": "eating_out"}}
+{"line": "CONTACTLESS AMAZON PRIME*UK LONDON \u00a317.79", "label": {"merchant": "Amazon Prime", "amount": 17.79, "category": "subscriptions"}}
+{"line": "DD SAINSBURY'S LOCAL REF 36406 \u00a327.89", "label": {"merchant": "Sainsbury's", "amount": 27.89, "category": "groceries"}}
+{"line": "STEAM PURCHASE 28566 10.44 GBP", "label": {"merchant": "Steam", "amount": 10.44, "category": "entertainment"}}
+{"line": "ODEON CINEMAS 61851 10.44 GBP", "label": {"merchant": "Odeon", "amount": 10.44, "category": "entertainment"}}
+{"line": "CARD PAYMENT TO AMZNPRIME*AB12C ON 14/11 14.09", "label": {"merchant": "Amazon Prime", "amount": 14.09, "category": "subscriptions"}}
+{"line": "DD AMZ*AMAZON.CO.UK REF 39260 \u00a382.05", "label": {"merchant": "Amazon", "amount": 82.05, "category": "shopping"}}
+{"line": "ASOS.COM 10235 93.28 GBP", "label": {"merchant": "ASOS", "amount": 93.28, "category": "shopping"}}
+{"line": "DD ARGOS LTD REF 90134 \u00a3190.15", "label": {"merchant": "Argos", "amount": 190.15, "category": "shopping"}}
+{"line": "CONTACTLESS FIRST BUS BRISTOL BATH \u00a34.56", "label": {"merchant": "First Bus", "amount": 4.56, "category": "transport"}}
+{"line": "GREGGS 1823 CARDIFF 01/05 \u00a38.88", "label": {"merchant": "Greggs", "amount": 8.88, "category": "eating_out"}}
+{"line": "FIRST BUS BRISTOL BRISTOL 13/08 \u00a34.77", "label": {"merchant": "First Bus", "amount": 4.77, "category": "transport"}}
+{"line": "CONTACTLESS TRAINLINE MANCHESTER \u00a3124.76", "label": {"merchant": "Trainline", "amount": 124.76, "category": "transport"}}
+{"line": "15/02 STEAM PURCHASE LONDON -52.25", "label": {"merchant": "Steam", "amount": 52.25, "category": "entertainment"}}
+{"line": "PRET A MANGER BATH 06/07 \u00a33.18", "label": {"merchant": "Pret", "amount": 3.18, "category": "eating_out"}}
+{"line": "BOOTS UK LTD MANCHESTER 20/08 \u00a37.28", "label": {"merchant": "Boots", "amount": 7.28, "category": "shopping"}}
+{"line": "CONTACTLESS THAMES WATER BRISTOL \u00a367.12", "label": {"merchant": "Thames Water", "amount": 67.12, "category": "bills"}}
+{"line": "10/05 UBER* TRIP HELP.UBER.COM -19.92", "label": {"merchant": "Uber", "amount": 19.92, "category": "transport"}}
+{"line": "CONTACTLESS LIDL GB BRISTOL \u00a37.28", "label": {"merchant": "Lidl", "amount": 7.28, "category": "groceries"}}
+{"line": "DD ALDI STORES REF 37125 \u00a327.09", "label": {"merchant": "Aldi", "amount": 27.09, "category": "groceries"}}
+{"line": "CONTACTLESS TRAINLINE.COM BATH \u00a392.24", "label": {"merchant": "Trainline", "amount": 92.24, "category": "transport"}}
+{"line": "12/07 EE & T-MOBILE LONDON -54.74", "label": {"merchant": "EE", "amount": 54.74, "category": "bills"}}
+{"line": "CONTACTLESS TRAINLINE LONDON \u00a366.84", "label": {"merchant": "Trainline", "amount": 66.84, "category": "transport"}}
+{"line": "SAINSBURYS S/MKTS 12/09 \u00a319.17", "label": {"merchant": "Sainsbury's", "amount": 19.17, "category": "groceries"}}
+{"line": "CONTACTLESS ODEON BRISTOL MANCHESTER \u00a320.97", "label": {"merchant": "Odeon", "amount": 20.97, "category": "entertainment"}}
+{"line": "19/09 FIRST BUS BRISTOL MANCHESTER -3.91", "label": {"merchant": "First Bus", "amount": 3.91, "category": "transport"}}
+{"line": "CONTACTLESS ASOS.COM LTD LONDON \u00a3147.62", "label": {"merchant": "ASOS", "amount": 147.62, "category": "shopping"}}
+{"line": "CONTACTLESS SAINSBURYS S/MKTS \u00a348.30", "label": {"merchant": "Sainsbury's", "amount": 48.3, "category": "groceries"}}
+{"line": "DELIVEROO.CO.UK CARDIFF 18/07 \u00a342.06", "label": {"merchant": "Deliveroo", "amount": 42.06, "category": "eating_out"}}
+{"line": "DELIVEROO BRISTOL 14/03 \u00a340.27", "label": {"merchant": "Deliveroo", "amount": 40.27, "category": "eating_out"}}
+{"line": "AMZNPRIME*AB12C MANCHESTER 25/02 \u00a357.91", "label": {"merchant": "Amazon Prime", "amount": 57.91, "category": "subscriptions"}}
+{"line": "CONTACTLESS ATM WDL NATWEST CARDIFF \u00a3111.77", "label": {"merchant": "ATM", "amount": 111.77, "category": "cash"}}
+{"line": "CONTACTLESS DISNEY PLUS MANCHESTER \u00a37.84", "label": {"merchant": "Disney+", "amount": 7.84, "category": "subscriptions"}}
+{"line": "24/08 SAINSBURYS S/MKTS BRISTOL -45.35", "label": {"merchant": "Sainsbury's", "amount": 45.35, "category": "groceries"}}
+{"line": "GREGGS 1823 99764 2.14 GBP", "label": {"merchant": "Greggs", "amount": 2.14, "category": "eating_out"}}
+{"line": "LIDL UK 64627 68.18 GBP", "label": {"merchant": "Lidl", "amount": 68.18, "category": "groceries"}}
+{"line": "CARD PAYMENT TO DISNEYPLUS ON 16/09 8.87", "label": {"merchant": "Disney+", "amount": 8.87, "category": "subscriptions"}}
+{"line": "TM *TICKETMASTER 17/07 \u00a327.31", "label": {"merchant": "Ticketmaster", "amount": 27.31, "category": "entertainment"}}
+{"line": "ODEON CINEMAS LONDON 27/04 \u00a326.73", "label": {"merchant": "Odeon", "amount": 26.73, "category": "entertainment"}}
+{"line": "FIRST BUS BRISTOL 76207 2.13 GBP", "label": {"merchant": "First Bus", "amount": 2.13, "category": "transport"}}
+{"line": "BRITISH GAS BATH 16/10 \u00a3128.96", "label": {"merchant": "British Gas", "amount": 128.96, "category": "bills"}}
+{"line": "DD TRAINLINE REF 21847 \u00a3134.79", "label": {"merchant": "Trainline", "amount": 134.79, "category": "transport"}}
+{"line": "DD PRET A MANGER REF 98826 \u00a33.25", "label": {"merchant": "Pret", "amount": 3.25, "category": "eating_out"}}
+{"line": "UBER *TRIP CARDIFF 05/11 \u00a315.15", "label": {"merchant": "Uber", "amount": 15.15, "category": "transport"}}
+{"line": "DD DISNEYPLUS REF 46094 \u00a39.81", "label": {"merchant": "Disney+", "amount": 9.81, "category": "subscriptions"}}
+{"line": "CONTACTLESS THAMES WATER UTIL LONDON \u00a364.77", "label": {"merchant": "Thames Water", "amount": 64.77, "category": "bills"}}
+{"line": "NETFLIX.COM MANCHESTER 22/06 \u00a315.72", "label": {"merchant": "Netflix", "amount": 15.72, "category": "subscriptions"}}
+{"line": "03/06 AMZN MKTP UK*2H3 CARDIFF -150.07", "label": {"merchant": "Amazon", "amount": 150.07, "category": "shopping"}}
+{"line": "10/04 AMZ*AMAZON.CO.UK -83.98", "label": {"merchant": "Amazon", "amount": 83.98, "category": "shopping"}}
+{"line": "DD NETFLIX INTERNATIONAL REF 28340 \u00a314.95", "label": {"merchant": "Netflix", "amount": 14.95, "category": "subscriptions"}}
+{"line": "BOOTS UK LTD 14629 4.45 GBP", "label": {"merchant": "Boots", "amount": 4.45, "category": "shopping"}}
+{"line": "CARD PAYMENT TO AMAZON PRIME*UK ON 23/04 68.73", "label": {"merchant": "Amazon Prime", "amount": 68.73, "category": "subscriptions"}}
+{"line": "10/03 SPOTIFY P1A2B3 MANCHESTER -13.66", "label": {"merchant": "Spotify", "amount": 13.66, "category": "subscriptions"}}
+{"line": "CARD PAYMENT TO SPOTIFY P1A2B3 ON 26/09 8.17", "label": {"merchant": "Spotify", "amount": 8.17, "category": "subscriptions"}}
+{"line": "CARD PAYMENT TO ASOS.COM ON 24/05 136.14", "label": {"merchant": "ASOS", "amount": 136.14, "category": "shopping"}}
+{"line": "DD STEAMGAMES.COM 4259 REF 71674 \u00a353.55", "label": {"merchant": "Steam", "amount": 53.55, "category": "entertainment"}}
+{"line": "DD SAINSBURYS S/MKTS REF 25704 \u00a395.70", "label": {"merchant": "Sainsbury's", "amount": 95.7, "category": "groceries"}}
+{"line": "CONTACTLESS CASH WITHDRAWAL LNK LONDON \u00a3139.33", "label": {"merchant": "ATM", "amount": 139.33, "category": "cash"}}
+{"line": "CONTACTLESS THAMES WATER BATH \u00a369.36", "label": {"merchant": "Thames Water", "amount": 69.36, "category": "bills"}}
+{"line": "CARD PAYMENT TO ODEON BRISTOL ON 02/01 9.78", "label": {"merchant": "Odeon", "amount": 9.78, "category": "entertainment"}}
+{"line": "DD NANDOS 0412 REF 26961 \u00a316.54", "label": {"merchant": "Nando's", "amount": 16.54, "category": "eating_out"}}
+{"line": "CONTACTLESS DISNEYPLUS CARDIFF \u00a37.60", "label": {"merchant": "Disney+", "amount": 7.6, "category": "subscriptions"}}
+{"line": "UBER *TRIP 92141 30.84 GBP", "label": {"merchant": "Uber", "amount": 30.84, "category": "transport"}}
+{"line": "BOOTS UK LTD 75973 17.18 GBP", "label": {"merchant": "Boots", "amount": 17.18, "category": "shopping"}}
+{"line": "AMAZON PRIME*UK BATH 15/12 \u00a332.55", "label": {"merchant": "Amazon Prime", "amount": 32.55, "category": "subscriptions"}}
+{"line": "16/06 DISNEY PLUS BATH -8.14", "label": {"merchant": "Disney+", "amount": 8.14, "category": "subscriptions"}}
+{"line": "CONTACTLESS TRAINLINE.COM LONDON \u00a3133.15", "label": {"merchant": "Trainline", "amount": 133.15, "category": "transport"}}
+{"line": "CARD PAYMENT TO UBER *TRIP ON 23/11 30.96", "label": {"merchant": "Uber", "amount": 30.96, "category": "transport"}}
+{"line": "DD BRITISH GAS REF 24170 \u00a3162.72", "label": {"merchant": "British Gas", "amount": 162.72, "category": "bills"}}
+{"line": "AMAZON.CO.UK*AB1CD CARDIFF 13/02 \u00a3209.69", "label": {"merchant": "Amazon", "amount": 209.69, "category": "shopping"}}
+{"line": "14/11 NANDOS 0412 BATH -26.08", "label": {"merchant": "Nando's", "amount": 26.08, "category": "eating_out"}}
+{"line": "27/02 ASOS.COM LTD CARDIFF -83.80", "label": {"merchant": "ASOS", "amount": 83.8, "category": "shopping"}}
+{"line": "BOOTS UK LTD LONDON 20/04 \u00a338.21", "label": {"merchant": "Boots", "amount": 38.21, "category": "shopping"}}
+{"line": "06/01 TM *TICKETMASTER BATH -88.01", "label": {"merchant": "Ticketmaster", "amount": 88.01, "category": "entertainment"}}
+{"line": "CONTACTLESS EE & T-MOBILE LONDON \u00a355.52", "label": {"merchant": "EE", "amount": 55.52, "category": "bills"}}
+{"line": "03/09 ALDI STORES LONDON -73.02", "label": {"merchant": "Aldi", "amount": 73.02, "category": "groceries"}}
+{"line": "10/05 BOOTS 1137 CARDIFF -44.24", "label": {"merchant": "Boots", "amount": 44.24, "category": "shopping"}}
+{"line": "SAINSBURY'S LOCAL BATH 26/11 \u00a313.68", "label": {"merchant": "Sainsbury's", "amount": 13.68, "category": "groceries"}}
+{"line": "THAMES WATER LONDON 22/11 \u00a356.93", "label": {"merchant": "Thames Water", "amount": 56.93, "category": "bills"}}
+{"line": "DD DELIVEROO REF 54921 \u00a323.80", "label": {"merchant": "Deliveroo", "amount": 23.8, "category": "eating_out"}}
+{"line": "CONTACTLESS TRAINLINE CARDIFF \u00a323.03", "label": {"merchant": "Trainline", "amount": 23.03, "category": "transport"}}
+{"line": "CARD PAYMENT TO AMZ*AMAZON.CO.UK ON 02/03 221.99", "label": {"merchant": "Amazon", "amount": 221.99, "category": "shopping"}}
+{"line": "DD THAMES WATER UTIL REF 57002 \u00a365.56", "label": {"merchant": "Thames Water", "amount": 65.56, "category": "bills"}}
+{"line": "16/02 DISNEY PLUS CARDIFF -5.17", "label": {"merchant": "Disney+", "amount": 5.17, "category": "subscriptions"}}
+{"line": "VIRGIN MEDIA 78788 27.99 GBP", "label": {"merchant": "Virgin Media", "amount": 27.99, "category": "bills"}}
+{"line": "CARD PAYMENT TO ODEON BRISTOL ON 17/12 24.36", "label": {"merchant": "Odeon", "amount": 24.36, "category": "entertainment"}}
+{"line": "CONTACTLESS LIDL UK \u00a332.57", "label": {"merchant": "Lidl", "amount": 32.57, "category": "groceries"}}
+{"line": "DD TFL TRAVEL CH REF 76265 \u00a312.91", "label": {"merchant": "TfL", "amount": 12.91, "category": "transport"}}
+{"line": "CARD PAYMENT TO CASH WITHDRAWAL LNK ON 11/04 99.16", "label": {"merchant": "ATM", "amount": 99.16, "category": "cash"}}
+{"line": "27/04 NANDO'S CHICKENLAND CARDIFF -10.81", "label": {"merchant": "Nando's", "amount": 10.81, "category": "eating_out"}}
+{"line": "VIRGIN MEDIA PYMTS CARDIFF 11/02 \u00a353.87", "label": {"merchant": "Virgin Media", "amount": 53.87, "category": "bills"}}
+{"line": "CONTACTLESS BOOTS 1137 MANCHESTER \u00a340.24", "label": {"merchant": "Boots", "amount": 40.24, "category": "shopping"}}
+{"line": "STEAM PURCHASE 54676 37.44 GBP", "label": {"merchant": "Steam", "amount": 37.44, "category": "entertainment"}}
+{"line": "CONTACTLESS GREGGS 1823 MANCHESTER \u00a37.78", "label": {"merchant": "Greggs", "amount": 7.78, "category": "eating_out"}}
+{"line": "CONTACTLESS EE LIMITED BRISTOL \u00a345.83", "label": {"merchant": "EE", "amount": 45.83, "category": "bills"}}
+{"line": "TESCO.COM 31516 42.94 GBP", "label": {"merchant": "Tesco", "amount": 42.94, "category": "groceries"}}
+{"line": "09/10 EE & T-MOBILE BRISTOL -17.02", "label": {"merchant": "EE", "amount": 17.02, "category": "bills"}}
+{"line": "CARD PAYMENT TO UBER* TRIP HELP.UBER.COM ON 23/06 10.11", "label": {"merchant": "Uber", "amount": 10.11, "category": "transport"}}
+{"line": "15/11 ODEON CINEMAS CARDIFF -17.12", "label": {"merchant": "Odeon", "amount": 17.12, "category": "entertainment"}}
+{"line": "DD NETFLIX.COM REF 73298 \u00a36.75", "label": {"merchant": "Netflix", "amount": 6.75, "category": "subscriptions"}}
+{"line": "27/03 NETFLIX.COM -15.15", "label": {"merchant": "Netflix", "amount": 15.15, "category": "subscriptions"}}
+{"line": "BG SERVICES 42537 132.05 GBP", "label": {"merchant": "British Gas", "amount": 132.05, "category": "bills"}}
+{"line": "NANDO'S CHICKENLAND 88974 23.32 GBP", "label": {"merchant": "Nando's", "amount": 23.32, "category": "eating_out"}}
+{"line": "24/09 ARGOS RETAIL -178.20", "label": {"merchant": "Argos", "amount": 178.2, "category": "shopping"}}
+{"line": "UBER* TRIP HELP.UBER.COM 95208 12.83 GBP", "label": {"merchant": "Uber", "amount": 12.83, "category": "transport"}}
+{"line": "TRAINLINE.COM 86389 74.51 GBP", "label": {"merchant": "Trainline", "amount": 74.51, "category": "transport"}}
+{"line": "26/01 AMAZON PRIME*UK CARDIFF -89.84", "label": {"merchant": "Amazon Prime", "amount": 89.84, "category": "subscriptions"}}
+{"line": "09/03 LIDL GB LONDON -5.67", "label": {"merchant": "Lidl", "amount": 5.67, "category": "groceries"}}
+{"line": "25/09 ASOS.COM LONDON -46.58", "label": {"merchant": "ASOS", "amount": 46.58, "category": "shopping"}}
+{"line": "21/09 GREGGS PLC -7.70", "label": {"merchant": "Greggs", "amount": 7.7, "category": "eating_out"}}
+{"line": "22/01 FIRSTGROUP BUS -4.04", "label": {"merchant": "First Bus", "amount": 4.04, "category": "transport"}}
+{"line": "02/01 BG SERVICES MANCHESTER -98.32", "label": {"merchant": "British Gas", "amount": 98.32, "category": "bills"}}
+{"line": "CONTACTLESS UBER *TRIP \u00a327.10", "label": {"merchant": "Uber", "amount": 27.1, "category": "transport"}}
+{"line": "DD GREGGS PLC REF 68827 \u00a37.29", "label": {"merchant": "Greggs", "amount": 7.29, "category": "eating_out"}}
+{"line": "CARD PAYMENT TO TRAINLINE.COM ON 02/07 137.82", "label": {"merchant": "Trainline", "amount": 137.82, "category": "transport"}}
+{"line": "SPOTIFY UK 30290 9.17 GBP", "label": {"merchant": "Spotify", "amount": 9.17, "category": "subscriptions"}}
+{"line": "JS ONLINE GROCERY MANCHESTER 27/11 \u00a319.45", "label": {"merchant": "Sainsbury's", "amount": 19.45, "category": "groceries"}}
+{"line": "EE & T-MOBILE MANCHESTER 08/03 \u00a349.50", "label": {"merchant": "EE", "amount": 49.5, "category": "bills"}}
+{"line": "DD ALDI STORES REF 37964 \u00a363.97", "label": {"merchant": "Aldi", "amount": 63.97, "category": "groceries"}}
+{"line": "CARD PAYMENT TO ASOS.COM ON 27/11 57.80", "label": {"merchant": "ASOS", "amount": 57.8, "category": "shopping"}}
+{"line": "22/06 LIDL GB BRISTOL -48.15", "label": {"merchant": "Lidl", "amount": 48.15, "category": "groceries"}}
+{"line": "DD STEAMGAMES.COM 4259 REF 77411 \u00a356.86", "label": {"merchant": "Steam", "amount": 56.86, "category": "entertainment"}}
+{"line": "STEAM PURCHASE 22577 32.00 GBP", "label": {"merchant": "Steam", "amount": 32.0, "category": "entertainment"}}
+{"line": "DD TRAINLINE.COM REF 97862 \u00a3136.25", "label": {"merchant": "Trainline", "amount": 136.25, "category": "transport"}}
+{"line": "CONTACTLESS AMZN MKTP UK*2H3 LONDON \u00a3194.30", "label": {"merchant": "Amazon", "amount": 194.3, "category": "shopping"}}
+{"line": "15/12 AMZN MKTP UK*2H3 BRISTOL -204.92", "label": {"merchant": "Amazon", "amount": 204.92, "category": "shopping"}}
+{"line": "JS ONLINE GROCERY 43901 12.36 GBP", "label": {"merchant": "Sainsbury's", "amount": 12.36, "category": "groceries"}}
+{"line": "CONTACTLESS THAMES WATER UTIL BRISTOL \u00a339.40", "label": {"merchant": "Thames Water", "amount": 39.4, "category": "bills"}}
+{"line": "SPOTIFY UK 28/02 \u00a36.07", "label": {"merchant": "Spotify", "amount": 6.07, "category": "subscriptions"}}
+{"line": "NETFLIX.COM 59992 6.38 GBP", "label": {"merchant": "Netflix", "amount": 6.38, "category": "subscriptions"}}
+{"line": "CARD PAYMENT TO BRITISH GAS ON 24/07 155.10", "label": {"merchant": "British Gas", "amount": 155.1, "category": "bills"}}
+{"line": "18/09 PRET A MANGER (EUROPE) BRISTOL -11.64", "label": {"merchant": "Pret", "amount": 11.64, "category": "eating_out"}}
+{"line": "CONTACTLESS LIDL GB BATH \u00a36.76", "label": {"merchant": "Lidl", "amount": 6.76, "category": "groceries"}}
+{"line": "DD UBER *TRIP REF 90856 \u00a320.03", "label": {"merchant": "Uber", "amount": 20.03, "category": "transport"}}
+{"line": "15/11 TICKETMASTER UK MANCHESTER -52.86", "label": {"merchant": "Ticketmaster", "amount": 52.86, "category": "entertainment"}}
+{"line": "ALDI 71 BRISTOL 19/08 \u00a326.80", "label": {"merchant": "Aldi", "amount": 26.8, "category": "groceries"}}
+{"line": "GREGGS 1823 MANCHESTER 03/04 \u00a32.90", "label": {"merchant": "Greggs", "amount": 2.9, "category": "eating_out"}}
+{"line": "EE LIMITED 51462 32.53 GBP", "label": {"merchant": "EE", "amount": 32.53, "category": "bills"}}
+{"line": "CARD PAYMENT TO THAMES WATER UTIL ON 27/06 28.43", "label": {"merchant": "Thames Water", "amount": 28.43, "category": "bills"}}
+{"line": "CONTACTLESS ASOS.COM BATH \u00a3113.15", "label": {"merchant": "ASOS", "amount": 113.15, "category": "shopping"}}
+{"line": "SPOTIFY P1A2B3 LONDON 18/04 \u00a37.31", "label": {"merchant": "Spotify", "amount": 7.31, "category": "subscriptions"}}
+{"line": "BOOTS 1137 MANCHESTER 21/01 \u00a353.52", "label": {"merchant": "Boots", "amount": 53.52, "category": "shopping"}}
+{"line": "AMAZON PRIME*UK MANCHESTER 18/08 \u00a341.46", "label": {"merchant": "Amazon Prime", "amount": 41.46, "category": "subscriptions"}}
+{"line": "DD ODEON BRISTOL REF 76900 \u00a311.27", "label": {"merchant": "Odeon", "amount": 11.27, "category": "entertainment"}}
+{"line": "22/03 ALDI 71 BRISTOL MANCHESTER -34.76", "label": {"merchant": "Aldi", "amount": 34.76, "category": "groceries"}}
+{"line": "DD TFL TRAVEL CH REF 57028 \u00a37.80", "label": {"merchant": "TfL", "amount": 7.8, "category": "transport"}}
+{"line": "SAINSBURY'S LOCAL BATH 08/01 \u00a326.41", "label": {"merchant": "Sainsbury's", "amount": 26.41, "category": "groceries"}}
+{"line": "CONTACTLESS UBER* TRIP HELP.UBER.COM CARDIFF \u00a323.61", "label": {"merchant": "Uber", "amount": 23.61, "category": "transport"}}
+{"line": "09/10 DELIVEROO -15.41", "label": {"merchant": "Deliveroo", "amount": 15.41, "category": "eating_out"}}
+{"line": "AMZNPRIME*AB12C 39215 20.65 GBP", "label": {"merchant": "Amazon Prime", "amount": 20.65, "category": "subscriptions"}}
+{"line": "NETFLIX INTERNATIONAL 75776 10.28 GBP", "label": {"merchant": "Netflix", "amount": 10.28, "category": "subscriptions"}}
+{"line": "DD TFL.GOV.UK/CP REF 30625 \u00a37.72", "label": {"merchant": "TfL", "amount": 7.72, "category": "transport"}}
+{"line": "26/06 GREGGS PLC CARDIFF -6.21", "label": {"merchant": "Greggs", "amount": 6.21, "category": "eating_out"}}
+{"line": "DD EE LIMITED REF 12942 \u00a343.76", "label": {"merchant": "EE", "amount": 43.76, "category": "bills"}}
+{"line": "CARD PAYMENT TO FIRST BUS BRISTOL ON 17/01 2.17", "label": {"merchant": "First Bus", "amount": 2.17, "category": "transport"}}
+{"line": "CARD PAYMENT TO TFL.GOV.UK/CP ON 19/11 2.73", "label": {"merchant": "TfL", "amount": 2.73, "category": "transport"}}
+{"line": "BOOTS 1137 CARDIFF 20/08 \u00a344.49", "label": {"merchant": "Boots", "amount": 44.49, "category": "shopping"}}
+{"line": "CARD PAYMENT TO TRAINLINE.COM ON 22/09 36.96", "label": {"merchant": "Trainline", "amount": 36.96, "category": "transport"}}
+{"line": "CONTACTLESS TRAINLINE.COM LONDON \u00a3103.59", "label": {"merchant": "Trainline", "amount": 103.59, "category": "transport"}}
+{"line": "DD LIDL UK REF 33255 \u00a35.09", "label": {"merchant": "Lidl", "amount": 5.09, "category": "groceries"}}
+{"line": "DD EE LIMITED REF 27082 \u00a355.08", "label": {"merchant": "EE", "amount": 55.08, "category": "bills"}}
+{"line": "14/06 DISNEYPLUS MANCHESTER -8.24", "label": {"merchant": "Disney+", "amount": 8.24, "category": "subscriptions"}}
+{"line": "CONTACTLESS ARGOS RETAIL BATH \u00a3109.72", "label": {"merchant": "Argos", "amount": 109.72, "category": "shopping"}}
+{"line": "CARD PAYMENT TO LIDL GB ON 20/09 32.08", "label": {"merchant": "Lidl", "amount": 32.08, "category": "groceries"}}
+{"line": "NANDOS 0412 MANCHESTER 01/07 \u00a315.80", "label": {"merchant": "Nando's", "amount": 15.8, "category": "eating_out"}}
+{"line": "UBER *TRIP 86725 29.38 GBP", "label": {"merchant": "Uber", "amount": 29.38, "category": "transport"}}
+{"line": "DD NANDO'S CHICKENLAND REF 62095 \u00a318.41", "label": {"merchant": "Nando's", "amount": 18.41, "category": "eating_out"}}
+{"line": "DD ODEON BRISTOL REF 82733 \u00a312.48", "label": {"merchant": "Odeon", "amount": 12.48, "category": "entertainment"}}
+{"line": "EE & T-MOBILE 25608 22.69 GBP", "label": {"merchant": "EE", "amount": 22.69, "category": "bills"}}
+{"line": "CARD PAYMENT TO BOOTS 1137 ON 17/07 16.10", "label": {"merchant": "Boots", "amount": 16.1, "category": "shopping"}}
