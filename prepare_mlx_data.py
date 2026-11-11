@@ -11,6 +11,7 @@ memorise it (this is what lets a user add their own category later). Validation 
 
 Usage: python prepare_mlx_data.py
 """
+#----------IMPORTS----------#
 import argparse
 import json
 import random
@@ -19,6 +20,9 @@ from pathlib import Path
 from common import CATEGORIES, build_messages, legacy_text, load_jsonl
 
 
+#----------HELPERS----------#
+
+#-----write-----#
 def write(rows: list[dict], path: Path) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     with open(path, "w") as f:
@@ -26,6 +30,7 @@ def write(rows: list[dict], path: Path) -> None:
             f.write(json.dumps(row) + "\n")
 
 
+#----------MAIN----------#
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--data-dir", default="data")

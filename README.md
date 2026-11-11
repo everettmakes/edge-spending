@@ -9,6 +9,18 @@
 Everything runs on one Apple Silicon (Arm) MacBook Air: QLoRA fine-tuning with MLX, GGUF export and
 quantisation with llama.cpp, CPU inference benchmarks with llama-cpp-python, and every run tracked in MLflow.
 
+**[Explore the interactive results →](https://everettmakes.github.io/edge-spending/)** Browse every prediction,
+filter the mistakes, compare runs line by line, and see where categories get confused.
+
+```mermaid
+flowchart LR
+    A["Bank line<br/><code>TESCO STORES 3297 £23.40</code>"] --> B["Qwen2.5 + LoRA<br/>(trained with MLX)"]
+    B --> C["JSON<br/>merchant · amount · category"]
+    C --> D["Scored against labels<br/>seen vs unseen merchants"]
+    B --> E["GGUF export<br/>F16 · Q8 · Q4 (llama.cpp)"]
+    E --> F["Arm CPU benchmark<br/>size · RAM · latency"]
+```
+
 ---
 
 ## TL;DR
@@ -139,7 +151,10 @@ python benchmark.py --gguf-dir gguf --kleidiai on
 python results.py                                                               # results.md + chart
 
 mlflow ui --backend-store-uri sqlite:///mlflow.db
+python make_site.py                                                             # docs/index.html
 ```
+
+To publish the site: push, then on GitHub go to Settings → Pages → Deploy from branch → `main`, folder `/docs`.
 
 ## Repository
 
@@ -151,6 +166,7 @@ mlflow ui --backend-store-uri sqlite:///mlflow.db
 | `export_gguf_mac.py` | Fuses adapters, converts to GGUF, quantises |
 | `benchmark.py` | CPU benchmark: size, RAM, latency, accuracy per GGUF file |
 | `results.py` | Tables, confidence intervals, McNemar tests, accuracy-vs-size chart |
+| `make_site.py` | Builds the interactive results site (`docs/index.html`) from the run predictions |
 | `common.py` | Prompt, categories, scoring, model list |
 | `cloud/` | Equivalent Unsloth scripts for an NVIDIA GPU |
 

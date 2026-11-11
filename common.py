@@ -1,13 +1,24 @@
 """Shared pieces: categories, prompt format and scoring. Used in Colab and on the laptop."""
+#----------IMPORTS----------#
 import json
 import re
 
+
+#----------TASK_DEFINITION----------#
+
+#-----the_8_categories-----#
 CATEGORIES = [
     "groceries", "transport", "eating_out", "bills",
     "subscriptions", "shopping", "entertainment", "cash",
 ]
+#-----mlflow_experiment-----#
 EXPERIMENT = "edge-spending-categoriser-v3"  # v3 = fixed test sets + recipe ablation + size ladder (v1, v2 kept)
 
+
+#----------PROMPT----------#
+
+#-----instruction_template-----#
+# {categories} is filled per example, so a user-defined category could be added later.
 INSTRUCTION = (
     "Categorise this bank transaction. Reply with JSON only, using the keys "
     '"merchant", "amount" and "category". '
@@ -16,12 +27,15 @@ INSTRUCTION = (
 )
 
 
+#-----fill_the_template-----#
 def prompt(line: str, categories: list[str] | None = None) -> str:
     """The category list is part of the prompt, so a user-defined category can be added later.
     Training shuffles its order (prepare_mlx_data.py) so the model learns to read the list."""
     return INSTRUCTION.format(categories=", ".join(categories or CATEGORIES), line=line)
 
 
+#-----chat_format (the fix)-----#
+# the model's own chat template is applied later by the tokenizer.
 def build_messages(line: str, answer: dict | None = None, categories: list[str] | None = None) -> list[dict]:
     """Chat messages for one transaction; include the assistant answer when training."""
     messages = [{"role": "user", "content": prompt(line, categories)}]
@@ -30,11 +44,16 @@ def build_messages(line: str, answer: dict | None = None, categories: list[str] 
     return messages
 
 
+#-----legacy_format (the tutorial's)-----#
 def legacy_text(line: str, answer: dict, categories: list[str] | None = None) -> str:
     """The original tutorial format: different from the chat template used at inference."""
     return f"### Instruction:\n{prompt(line, categories)}\n\n### Response:\n{json.dumps(answer)}"
 
 
+
+#----------SCORING----------#
+
+#-----read_the_model_reply-----#
 def parse_json(text: str) -> dict | None:
     """Pull the first {...} object out of a model reply; None if there isn't a valid one."""
     match = re.search(r"\{.*?\}", text, re.DOTALL)
@@ -47,6 +66,8 @@ def parse_json(text: str) -> dict | None:
     return parsed if isinstance(parsed, dict) else None
 
 
+#-----field_checks-----#
+# amounts match within half a penny, ignoring £ and commas.
 def _amount_matches(predicted, expected: float) -> bool:
     try:
         return abs(float(str(predicted).replace(",", "").replace("£", "")) - expected) < 0.005
@@ -59,6 +80,8 @@ def norm_merchant(name) -> str:
     return re.sub(r"[^a-z0-9+&]", "", str(name).lower())
 
 
+#-----per_line_correctness-----#
+# used by results.py for paired McNemar tests.
 def score_one(reply: str, gold: dict) -> dict:
     """Per-line correctness. results.py uses these to run paired significance tests between models."""
     pred = parse_json(reply)
@@ -71,6 +94,7 @@ def score_one(reply: str, gold: dict) -> dict:
             "exact": cat_ok and mer_ok and amt_ok}
 
 
+#-----aggregate_metrics-----#
 def score(predictions: list[str], labels: list[dict]) -> dict:
     """Aggregate metrics for a list of raw model replies against gold labels."""
     per_line = [score_one(reply, gold) for reply, gold in zip(predictions, labels)]
@@ -85,16 +109,22 @@ def score(predictions: list[str], labels: list[dict]) -> dict:
     }
 
 
+
+#----------EXPERIMENT_SETUP----------#
+
+#-----test_splits-----#
 # Test splits: "seen" uses training merchants; "unseen" uses held-out merchants and line formats;
 # "real" is your own hand-labelled bank lines (optional, skipped if the file doesn't exist).
 # Metrics are logged with a "<split>_" prefix, except seen which keeps the plain names.
 SPLITS = {"seen": "data/test.jsonl", "unseen": "data/test_unseen.jsonl", "real": "data/test_real.jsonl"}
 
 
+#-----metric_names-----#
 def metric_prefix(split: str) -> str:
     return "" if split == "seen" else f"{split}_"
 
 
+#-----base_models-----#
 # Base-model ladder for the size experiment. Any Hugging Face / MLX repo id also works.
 MODELS = {
     "qwen-3b-4bit": "mlx-community/Qwen2.5-3B-Instruct-4bit",       # size ladder, all QLoRA on a 4-bit base
@@ -107,6 +137,8 @@ MODELS = {
 }
 
 
+
+#----------IO----------#
 def load_jsonl(path: str) -> list[dict]:
     with open(path) as f:
         return [json.loads(line) for line in f if line.strip()]

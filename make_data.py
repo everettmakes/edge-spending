@@ -18,11 +18,14 @@ the recipe flags: recipes can be compared fairly on the same test lines.
 Usage: python make_data.py                                  # v3 recipe
        python make_data.py --out data_v2recipe --no-augment --no-extra   # ablation: same tests
 """
+#----------IMPORTS----------#
 import argparse
 import json
 import random
 from collections import Counter, defaultdict
 from pathlib import Path
+
+#----------MERCHANTS----------#
 
 # (canonical merchant, category, raw statement variants, typical amount range in £)
 MERCHANTS = [
@@ -169,6 +172,8 @@ MERCHANTS = [
     ("ATM", "cash", ["CASH HSBC ATM", "NOTEMACHINE ATM", "ATM POST OFFICE"], (10, 200)),
 ]
 
+#----------EXTRA_MERCHANTS (v3 recipe)----------#
+
 # Extra merchants for the v3 recipe. They only ever go to train/valid, so the unseen test is unchanged.
 CAT_RANGE = {"groceries": (3, 90), "transport": (2, 120), "eating_out": (3, 40), "bills": (10, 150),
              "subscriptions": (3, 25), "shopping": (5, 150), "entertainment": (5, 80), "cash": (10, 200)}
@@ -240,11 +245,14 @@ EXTRA_MERCHANTS = [(name, cat, raws, CAT_RANGE[cat]) for name, cat, raws in [
     ("ATM", "cash", ["ATM TSB BANK", "CASH MONZO ATM", "ATM CO-OP BANK"]),
 ]]
 
+#----------AUGMENTATION----------#
+
 # Augmentation for train/valid lines. The unseen test's own codes are excluded so nothing leaks.
 TEST_ONLY_CODES = {"BCC", "VIS", "POS"}
 NAME_SUFFIXES = [" LTD", " PLC", " UK", " GB", ".COM", " {n}", " {n}", " STORE {n}"]
 
 
+#-----random_code-----#
 def random_code(rng: random.Random) -> str:
     while True:
         code = "".join(rng.choice("ABCDEFGHIJKLMNOPRSTUVWXY") for _ in range(rng.randint(2, 4)))
@@ -252,12 +260,15 @@ def random_code(rng: random.Random) -> str:
             return code
 
 
+#-----augment_raw-----#
 def augment_raw(rng: random.Random, raw: str) -> str:
     """Store numbers and corporate suffixes the model should learn to drop."""
     if rng.random() < 0.3:
         raw += rng.choice(NAME_SUFFIXES).format(n=rng.randint(10, 9999))
     return raw
 
+
+#----------LINE_FORMATS----------#
 
 CITIES = ["BRISTOL", "LONDON", "BATH", "CARDIFF", "MANCHESTER", "LEEDS", "GLASGOW", ""]
 
@@ -282,6 +293,9 @@ UNSEEN_TEMPLATES = [  # only ever used for the unseen test
 ]
 
 
+#----------GENERATION----------#
+
+#-----split_merchants-----#
 def split_merchants(rng: random.Random, valid_frac: float, test_frac: float) -> dict[str, list]:
     """Stratified by category: every split gets merchants from every category."""
     by_cat = defaultdict(list)
@@ -299,6 +313,7 @@ def split_merchants(rng: random.Random, valid_frac: float, test_frac: float) -> 
     return splits
 
 
+#-----noisy_raw-----#
 def noisy_raw(rng: random.Random, raw: str) -> str:
     """Real statements truncate merchant text and sometimes aren't upper case."""
     if len(raw) > 18 and rng.random() < 0.3:
@@ -308,6 +323,7 @@ def noisy_raw(rng: random.Random, raw: str) -> str:
     return raw
 
 
+#-----make_example-----#
 def make_example(rng: random.Random, merchants: list, templates: list, augment: bool = False) -> dict:
     # pick a category first, then a merchant in it, so categories stay balanced (cash has only one merchant)
     category = rng.choice(sorted({m[1] for m in merchants}))
@@ -331,12 +347,14 @@ def make_example(rng: random.Random, merchants: list, templates: list, augment: 
     return {"line": line, "label": {"merchant": merchant, "amount": amount, "category": category}}
 
 
+#-----write_jsonl-----#
 def write_jsonl(rows: list[dict], path: Path) -> None:
     with open(path, "w") as f:
         for row in rows:
             f.write(json.dumps(row) + "\n")
 
 
+#----------MAIN----------#
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--train", type=int, default=1200)

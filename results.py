@@ -9,6 +9,7 @@ Statistics (all on exact-match accuracy, per test line):
       p_vs_f16   each quantised file against the 16-bit file from the same training run
   * mean and spread across seeds, for configs trained more than once
 """
+#----------IMPORTS----------#
 import json
 import math
 from pathlib import Path
@@ -22,11 +23,14 @@ import pandas as pd  # noqa: E402
 
 from common import EXPERIMENT, SPLITS, score_one  # noqa: E402
 
+#----------CONFIG----------#
+
 ALPHA = 0.05
 
 
-# ---------- statistics ----------
+#----------STATISTICS----------#
 
+#-----wilson-----#
 def wilson(k: int, n: int, z: float = 1.96) -> tuple[float, float]:
     """95% Wilson interval for k successes out of n (behaves well near 0% and 100%)."""
     if n == 0:
@@ -37,6 +41,7 @@ def wilson(k: int, n: int, z: float = 1.96) -> tuple[float, float]:
     return max(0.0, centre - half), min(1.0, centre + half)
 
 
+#-----mcnemar-----#
 def mcnemar(a: list[bool], b: list[bool]) -> float:
     """Exact two-sided McNemar p-value for paired correctness lists (same lines, same order).
 
@@ -52,8 +57,9 @@ def mcnemar(a: list[bool], b: list[bool]) -> float:
     return min(1.0, 2 * tail)
 
 
-# ---------- loading ----------
+#----------LOADING----------#
 
+#-----load_correct-----#
 def load_correct(run_name: str, split: str) -> list[bool] | None:
     """Per-line exact-match correctness from predictions/<run>/<split>.jsonl, if it exists."""
     path = Path("predictions") / run_name / f"{split}.jsonl"
@@ -63,10 +69,12 @@ def load_correct(run_name: str, split: str) -> list[bool] | None:
     return [score_one(r["reply"], r["label"])["exact"] for r in rows]
 
 
+#-----col-----#
 def col(runs: pd.DataFrame, name: str) -> pd.Series:
     return runs[name] if name in runs.columns else pd.Series([None] * len(runs), index=runs.index)
 
 
+#-----latest_runs-----#
 def latest_runs() -> pd.DataFrame:
     runs = mlflow.search_runs(experiment_names=[EXPERIMENT])
     if runs.empty:
@@ -75,6 +83,7 @@ def latest_runs() -> pd.DataFrame:
     return runs.drop_duplicates("tags.mlflow.runName").reset_index(drop=True)  # keep the newest of each name
 
 
+#-----add_stats-----#
 def add_stats(df: pd.DataFrame, split: str) -> pd.DataFrame:
     """Add CI and p_vs_best columns for one split, using per-line predictions on disk."""
     correct = {run: load_correct(run, split) for run in df["run"]}
@@ -98,13 +107,15 @@ def add_stats(df: pd.DataFrame, split: str) -> pd.DataFrame:
     return df
 
 
+#-----fmt_ci-----#
 def fmt_ci(df: pd.DataFrame, split: str) -> pd.Series:
     return df.apply(lambda r: "" if pd.isna(r[f"{split}_exact"]) else
                     f"{r[f'{split}_exact']:.3f} [{r[f'{split}_lo']:.2f}, {r[f'{split}_hi']:.2f}]", axis=1)
 
 
-# ---------- tables ----------
+#----------TABLES----------#
 
+#-----training_table-----#
 def training_table(runs: pd.DataFrame) -> pd.DataFrame:
     sub = runs[runs["tags.stage"].isin(["baseline", "train"])]
     df = pd.DataFrame({
@@ -123,6 +134,7 @@ def training_table(runs: pd.DataFrame) -> pd.DataFrame:
     return df
 
 
+#-----benchmark_table-----#
 def benchmark_table(runs: pd.DataFrame, training: pd.DataFrame) -> pd.DataFrame:
     sub = runs[runs["tags.stage"] == "benchmark"]
     if sub.empty:
@@ -157,6 +169,7 @@ def benchmark_table(runs: pd.DataFrame, training: pd.DataFrame) -> pd.DataFrame:
     return df.sort_values("size_mb").reset_index(drop=True)
 
 
+#-----seed_table-----#
 def seed_table(training: pd.DataFrame) -> pd.DataFrame:
     trained = training[training["template"] != "-"]
     keys = ["base_model", "template", "rank", "targets"]
@@ -174,13 +187,15 @@ def seed_table(training: pd.DataFrame) -> pd.DataFrame:
     return pd.DataFrame(rows)
 
 
+#-----to_md-----#
 def to_md(df: pd.DataFrame, columns: list[str]) -> str:
     present = [c for c in columns if c in df.columns]
     return df[present].round(3).to_markdown(index=False)
 
 
-# ---------- chart ----------
+#----------CHART----------#
 
+#-----chart-----#
 def chart(bench: pd.DataFrame, split: str) -> None:
     data = bench.dropna(subset=[f"{split}_exact"])
     if data.empty:
@@ -207,7 +222,7 @@ def chart(bench: pd.DataFrame, split: str) -> None:
     print("Saved accuracy_vs_size.png")
 
 
-# ---------- main ----------
+#----------MAIN----------#
 
 def main() -> None:
     runs = latest_runs()

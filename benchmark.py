@@ -7,6 +7,7 @@ Run on your laptop:  python benchmark.py --gguf-dir gguf
 Only some files:     python benchmark.py --gguf-dir gguf --match smollm2
 Optional tag for the Arm KleidiAI comparison:  --kleidiai on|off
 """
+#----------IMPORTS----------#
 import argparse
 import json
 import platform
@@ -20,20 +21,29 @@ from llama_cpp import Llama
 
 from common import EXPERIMENT, SPLITS, build_messages, load_jsonl, metric_prefix, score
 
+#----------CONFIG----------#
+
 QUANT_RE = re.compile(r"(Q\d_K_[SML]|Q\d_\d|Q\d_K|BF16|F16)", re.IGNORECASE)
 
 
+#----------HELPERS----------#
+
+#-----quant_label-----#
 def quant_label(path: Path) -> str:
     """Pull 'Q4_K_M' etc. out of a filename; fall back to the parent folder name."""
     match = QUANT_RE.search(path.name)
     return match.group(1).upper() if match else path.parent.name.upper()
 
 
+#-----model_run-----#
 def model_run(path: Path) -> str:
     """'smollm2-135m-r8-Q4_0.gguf' -> 'smollm2-135m-r8' (the training run the file came from)."""
     return QUANT_RE.split(path.stem)[0].rstrip("-_")
 
 
+#----------BENCHMARK----------#
+
+#-----benchmark-----#
 def benchmark(path: Path, splits: dict, threads: int, kleidiai: str, n_gpu_layers: int) -> None:
     process = psutil.Process()
     device = "cpu" if n_gpu_layers == 0 else "gpu"
@@ -90,6 +100,7 @@ def benchmark(path: Path, splits: dict, threads: int, kleidiai: str, n_gpu_layer
         del llm  # free the model before loading the next file, so peak RAM isn't cumulative
 
 
+#----------MAIN----------#
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--gguf-dir", default="gguf")

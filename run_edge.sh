@@ -5,6 +5,7 @@ set -euo pipefail
 export MLFLOW_TRACKING_URI=sqlite:///mlflow.db
 
 for run in qwen-0.5b-r8 qwen-1.5b-r8 qwen-3b-r8; do
+  [ -d adapters/$run ] || { echo "skipping $run (not trained)"; continue; }
   python export_gguf_mac.py --adapter adapters/$run --llama-cpp ../llama.cpp
 done
 

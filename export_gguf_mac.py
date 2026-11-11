@@ -5,20 +5,28 @@ Usage: python export_gguf_mac.py --adapter adapters/r8-attn --llama-cpp ../llama
 The base model is read from the adapter's adapter_config.json, so the same command works for every
 model in the size ladder. Writes gguf/<run>-F16.gguf plus one file per quantisation.
 """
+#----------IMPORTS----------#
 import argparse
 import json
 import subprocess
 import sys
 from pathlib import Path
 
+#----------CONFIG----------#
+# llama.cpp quantisation formats to produce.
+
 QUANTS = ["Q8_0", "Q4_K_M", "Q4_0"]
 
 
+#----------HELPERS----------#
+
+#-----run-----#
 def run(cmd: list[str]) -> None:
     print("$", " ".join(cmd))
     subprocess.run(cmd, check=True)
 
 
+#----------MAIN----------#
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--adapter", required=True)

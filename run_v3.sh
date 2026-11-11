@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-# v3: fixed test sets, recipe ablation and size ladder. Runs unattended; ~1.5-2 h on a MacBook Air.
+# v3: fixed test sets, recipe ablation, 0.5B + 1.5B ladder. Runs unattended; ~45 min on a MacBook Air.
+# The 3B runs are in run_3b.sh (~50 min): run them overnight if you want the bigger reference point.
 # Usage: source .venv/bin/activate && bash run_v3.sh 2>&1 | tee run_v3.log
 set -euo pipefail
 export MLFLOW_TRACKING_URI=sqlite:///mlflow.db
@@ -14,11 +15,9 @@ python prepare_mlx_data.py --data-dir data_v2recipe --out mlx_v2recipe
 python train_mlx.py --run-name qwen-0.5b-v2recipe --base-model qwen-0.5b-4bit --mlx-data mlx_v2recipe
 python train_mlx.py --run-name qwen-0.5b-r8 --base-model qwen-0.5b-4bit
 
-# 2) size ladder: zero-shot and fine-tuned, smallest first (3B last in case it runs out of memory)
+# 2) size ladder: zero-shot and fine-tuned
 python train_mlx.py --run-name qwen-0.5b-zeroshot --base-model qwen-0.5b-4bit --zero-shot
 python train_mlx.py --run-name qwen-1.5b-zeroshot --base-model qwen-1.5b-4bit --zero-shot
 python train_mlx.py --run-name qwen-1.5b-r8 --base-model qwen-1.5b-4bit
-python train_mlx.py --run-name qwen-3b-zeroshot --base-model qwen-3b-4bit --zero-shot
-python train_mlx.py --run-name qwen-3b-r8 --base-model qwen-3b-4bit
 
 python results.py
