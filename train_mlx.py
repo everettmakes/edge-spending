@@ -1,27 +1,38 @@
-"""Fine-tune (or zero-shot evaluate) Qwen2.5-0.5B on Apple Silicon with MLX, logging to MLflow.
+"""Fine-tune (or zero-shot evaluate) a small LLM on Apple Silicon with MLX, logging to MLflow.
+
+Every run is scored on two test sets: "seen" (training merchants) and "unseen" (new merchants and
+line formats). Unseen metrics are logged with an "unseen_" prefix.
 
 Examples:
   python train_mlx.py --run-name baseline --zero-shot
   python train_mlx.py --run-name legacy-format --template legacy
   python train_mlx.py --run-name r8-attn
   python train_mlx.py --run-name r16-attn-mlp --rank 16 --targets attn_mlp
+
+  # recipe ablation: old recipe, same test sets
+  python train_mlx.py --run-name r8-v2recipe --mlx-data mlx_v2recipe
+
+  # size ladder: same recipe, bigger and smaller base models (see MODELS in common.py)
+  python train_mlx.py --run-name qwen-3b-r8 --base-model qwen-3b-4bit
 """
 import argparse
 import json
+import shutil
 import time
 import types
 from pathlib import Path
 
 import mlflow
+import mlx.core as mx
+import numpy as np
 from mlx.utils import tree_flatten
 from mlx_lm import generate, load
 from mlx_lm.lora import CONFIG_DEFAULTS, train_model
 from mlx_lm.tuner.callbacks import TrainingCallback
 from mlx_lm.tuner.datasets import load_dataset
 
-from common import EXPERIMENT, build_messages, load_jsonl, score
+from common import EXPERIMENT, MODELS, SPLITS, build_messages, load_jsonl, metric_prefix, score
 
-BASE_MODEL = "mlx-community/Qwen2.5-0.5B-Instruct-4bit"  # 4-bit base -> QLoRA
 TARGETS = {
     "attn": ["self_attn.q_proj", "self_attn.k_proj", "self_attn.v_proj", "self_attn.o_proj"],
     "attn_mlp": ["self_attn.q_proj", "self_attn.k_proj", "self_attn.v_proj", "self_attn.o_proj",
@@ -34,6 +45,7 @@ class MLflowCallback(TrainingCallback):
 
     def __init__(self):
         self.peak_memory_gb = 0.0
+        self.val_losses = {}  # iteration -> val loss
 
     def on_train_loss_report(self, info: dict):
         step = info["iteration"]
@@ -43,6 +55,7 @@ class MLflowCallback(TrainingCallback):
 
     def on_val_loss_report(self, info: dict):
         mlflow.log_metric("val_loss", info["val_loss"], step=info["iteration"])
+        self.val_losses[info["iteration"]] = info["val_loss"]
 
 
 def evaluate(model, tokenizer, rows: list[dict], max_tokens: int = 64) -> tuple[dict, list[str]]:
@@ -55,29 +68,55 @@ def evaluate(model, tokenizer, rows: list[dict], max_tokens: int = 64) -> tuple[
     return score(replies, [r["label"] for r in rows]), replies
 
 
-def train(args, run_dir: Path) -> float:
-    """Train LoRA adapters into run_dir and return MLX's peak memory in GB."""
+def keep_best_checkpoint(run_dir: Path, val_losses: dict, every: int) -> int:
+    """Early stopping after the fact: copy the checkpoint with the lowest val loss over adapters.safetensors.
+    Validation uses held-out merchants, so this picks the point before the model starts memorising."""
+    # MLX reports validation at iteration N-1 and saves the checkpoint at N (e.g. val 49 -> 0000050_*)
+    saved = {}
+    for it, loss in val_losses.items():
+        for ckpt in (it, it + 1):
+            if ckpt > 0 and ckpt % every == 0 and (run_dir / f"{ckpt:07d}_adapters.safetensors").exists():
+                saved[ckpt] = loss
+    if not saved:
+        print("No checkpoint matched a validation step: keeping the final adapters.")
+        return -1
+    best = min(saved, key=saved.get)
+    shutil.copy(run_dir / f"{best:07d}_adapters.safetensors", run_dir / "adapters.safetensors")
+    mlflow.log_metrics({"best_iter": best, "best_val_loss": saved[best]})
+    print(f"Keeping checkpoint from iteration {best} (val loss {saved[best]:.4f})")
+    return best
+
+
+def train(args, base_model: str, run_dir: Path) -> float:
+    """Train LoRA adapters into run_dir, keep the best checkpoint, and return MLX's peak memory in GB."""
     config = dict(CONFIG_DEFAULTS)
     config.update({
-        "model": BASE_MODEL, "train": True, "fine_tune_type": "lora",
-        "data": f"mlx_data/{args.template}", "adapter_path": str(run_dir),
+        "model": base_model, "train": True, "fine_tune_type": "lora",
+        "data": f"{args.mlx_data}/{args.template}", "adapter_path": str(run_dir),
         "num_layers": -1,                      # add adapters to every transformer layer
         "iters": args.iters, "batch_size": args.batch_size, "learning_rate": args.lr,
         "lora_parameters": {"rank": args.rank, "scale": args.scale, "dropout": 0.0,
                             "keys": TARGETS[args.targets]},
         "mask_prompt": args.template == "chat",  # loss on answer tokens only (not possible for plain text)
-        "steps_per_report": 10, "steps_per_eval": 50, "val_batches": -1,
-        "save_every": args.iters, "max_seq_length": 256, "seed": 0,
+        "steps_per_report": 10, "steps_per_eval": args.eval_every, "val_batches": -1,
+        "save_every": args.eval_every,         # a checkpoint at every validation, so the best can be kept
+        "max_seq_length": 256, "seed": args.seed,
     })
     config = types.SimpleNamespace(**config)
 
-    model, tokenizer = load(BASE_MODEL)
+    # train_model doesn't seed anything itself: LoRA init uses mx.random, batch shuffling uses numpy
+    mx.random.seed(args.seed)
+    np.random.seed(args.seed)
+
+    model, tokenizer = load(base_model)
     train_set, valid_set, _ = load_dataset(config, tokenizer)
     callback = MLflowCallback()
     train_model(config, model, train_set, valid_set, training_callback=callback)
 
     trainable = sum(v.size for _, v in tree_flatten(model.trainable_parameters()))
     mlflow.log_metric("trainable_params", trainable)
+    if not args.keep_last:
+        keep_best_checkpoint(run_dir, callback.val_losses, args.eval_every)
     return callback.peak_memory_gb
 
 
@@ -85,46 +124,66 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--run-name", required=True)
     parser.add_argument("--zero-shot", action="store_true", help="evaluate the base model without training")
+    parser.add_argument("--base-model", default="qwen-0.5b-4bit",
+                        help=f"one of {list(MODELS)} or any MLX / Hugging Face repo id")
     parser.add_argument("--template", choices=["chat", "legacy"], default="chat")
     parser.add_argument("--rank", type=int, default=8)
     parser.add_argument("--scale", type=float, default=2.0, help="LoRA multiplier (= alpha / rank in PEFT terms)")
     parser.add_argument("--targets", choices=list(TARGETS), default="attn")
-    parser.add_argument("--iters", type=int, default=150, help="~2 epochs of 540 rows at batch 8")
+    parser.add_argument("--iters", type=int, default=300, help="2 epochs of 1200 rows at batch 8")
+    parser.add_argument("--eval-every", type=int, default=50, help="validate + checkpoint every N iterations")
+    parser.add_argument("--keep-last", action="store_true", help="use the final checkpoint, not the best val loss")
     parser.add_argument("--batch-size", type=int, default=8)
     parser.add_argument("--lr", type=float, default=2e-4)
+    parser.add_argument("--seed", type=int, default=0, help="rerun a config with seeds 0, 1, 2 to measure training noise")
     parser.add_argument("--adapter-dir", default="adapters")
+    parser.add_argument("--mlx-data", default="mlx_data", help="training data folder from prepare_mlx_data.py")
     args = parser.parse_args()
 
-    test_rows = load_jsonl("data/test.jsonl")
+    base_model = MODELS.get(args.base_model, args.base_model)
+    splits = {name: load_jsonl(path) for name, path in SPLITS.items() if Path(path).exists()}
+    if "unseen" not in splits:
+        print("No data/test_unseen.jsonl yet: run `python make_data.py` to create it. Scoring seen split only.")
+
     mlflow.set_experiment(EXPERIMENT)
     with mlflow.start_run(run_name=args.run_name):
         mlflow.set_tags({"stage": "baseline" if args.zero_shot else "train",
-                         "base_model": BASE_MODEL, "device": "apple-silicon-mlx"})
-        mlflow.log_params({"zero_shot": args.zero_shot, "n_test": len(test_rows)})
+                         "base_model": base_model, "device": "apple-silicon-mlx"})
+        mlflow.log_params({"zero_shot": args.zero_shot, "base_model_name": args.base_model,
+                           **{f"n_test_{name}": len(rows) for name, rows in splits.items()}})
 
         adapter_path = None
         if not args.zero_shot:
             mlflow.log_params({"template": args.template, "rank": args.rank, "scale": args.scale,
-                               "targets": args.targets, "iters": args.iters,
+                               "targets": args.targets, "iters": args.iters, "seed": args.seed,
+                               "checkpoint": "last" if args.keep_last else "best_val",
+                               "mlx_data": args.mlx_data,
                                "batch_size": args.batch_size, "lr": args.lr})
             run_dir = Path(args.adapter_dir) / args.run_name
             start = time.perf_counter()
-            peak_gb = train(args, run_dir)
+            peak_gb = train(args, base_model, run_dir)
             mlflow.log_metrics({"train_time_s": time.perf_counter() - start, "peak_mem_mb": peak_gb * 1000})
             mlflow.log_param("adapter_path", str(run_dir))
             adapter_path = str(run_dir)
 
-        model, tokenizer = load(BASE_MODEL, adapter_path=adapter_path)
-        start = time.perf_counter()
-        metrics, replies = evaluate(model, tokenizer, test_rows)
-        metrics["eval_time_s"] = time.perf_counter() - start
-        mlflow.log_metrics(metrics)
+        model, tokenizer = load(base_model, adapter_path=adapter_path)
+        out_dir = Path("predictions") / args.run_name
+        out_dir.mkdir(parents=True, exist_ok=True)
+        all_metrics = {}
+        for name, rows in splits.items():
+            start = time.perf_counter()
+            metrics, replies = evaluate(model, tokenizer, rows)
+            metrics["eval_time_s"] = time.perf_counter() - start
+            all_metrics.update({metric_prefix(name) + k: v for k, v in metrics.items()})
 
-        with open("predictions.jsonl", "w") as f:
-            for row, reply in zip(test_rows, replies):
-                f.write(json.dumps({"line": row["line"], "label": row["label"], "reply": reply}) + "\n")
-        mlflow.log_artifact("predictions.jsonl")
-        print(json.dumps({k: round(v, 4) for k, v in metrics.items()}, indent=2))
+            path = out_dir / f"{name}.jsonl"
+            with open(path, "w") as f:
+                for row, reply in zip(rows, replies):
+                    f.write(json.dumps({"line": row["line"], "label": row["label"], "reply": reply}) + "\n")
+            mlflow.log_artifact(str(path), artifact_path="predictions")
+
+        mlflow.log_metrics(all_metrics)
+        print(json.dumps({k: round(v, 4) for k, v in all_metrics.items()}, indent=2))
 
 
 if __name__ == "__main__":
